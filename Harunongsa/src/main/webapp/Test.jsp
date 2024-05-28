@@ -13,7 +13,15 @@
 <h2> 이강민 </h2>
 <h2>김유빈</h2>
 <h3> 치킨 먹고 싶당</h3>
+<<<<<<< HEAD
 
 
+=======
+<h4> 오진영12 </h4>
+<h5> 오진영123 </h5>
+<!-- 주석 테스트 -->
+<!-- 1231 -->
+<h6> 오진영1234 </h6>
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-DCX-BigData-10/harunongsa.git
 </body>
 </html>
