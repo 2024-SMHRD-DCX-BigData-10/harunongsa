@@ -29,6 +29,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/smhrd1/Documents/카카오톡 받은 파일/apache-maven-3.9.6-bin.zip"/>
+	<classpathentry kind="lib" path="C:/Users/smhrd1/Downloads/apache-maven-3.9.6-bin.zip"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
