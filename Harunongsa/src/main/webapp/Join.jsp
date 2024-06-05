@@ -51,7 +51,7 @@
             flex-direction: column;
             height: 100vh;
             padding: 30px;
-            width: 380px;
+            width: 422px;
             background-color: #FCFCFC;
         }
 
