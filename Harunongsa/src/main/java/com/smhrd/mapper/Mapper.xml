@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <!-- SQL문자와 Java코드를 분리하기 위한 파일 -->
+<mapper namespace = "org.mybatis.example.BlogMapper">
+	<!-- 바인드변수(?) 대신 #{필드명} -->
+	<insert id="join" parameterType="MemberDTO">
+		insert into member values(#{id}, #{pw}, #{name}, #{age})
+	</insert>
+	
+	<select id="login" parameterType="MemberDTO" resultType="String">
+		select name from member where id=#{id} and pw=#{pw}
+	</select>
+</mapper>
