@@ -6,11 +6,11 @@
   <!-- SQL문자와 Java코드를 분리하기 위한 파일 -->
 <mapper namespace = "org.mybatis.example.BlogMapper">
 	<!-- 바인드변수(?) 대신 #{필드명} -->
-	<insert id="join" parameterType="MemberDTO">
-		insert into member values(#{memberID}, #{password}, #{name}, #{phoneNumber}, #{email}, #{preference}, #{memberType}, #{joinedAt})
+	<insert id="join" parameterType="MemDTO">
+		insert into members values(#{memberID}, #{password}, #{name}, #{phoneNumber}, #{email}, #{preference}, #{memberType}, #{joinedAt})
 	</insert>
 	
-	<select id="login" parameterType="MemberDTO" resultType="String">
-		select name from member where memberID=#{memberID} and password=#{password}
+	<select id="login" parameterType="MemDTO" resultType="String">
+		select name from members where memberid=#{memberID} and password=#{password}
 	</select>
 </mapper>
