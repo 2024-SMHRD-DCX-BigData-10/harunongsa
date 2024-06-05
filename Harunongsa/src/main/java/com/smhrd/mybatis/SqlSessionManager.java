@@ -19,7 +19,6 @@ public class SqlSessionManager {
 		try {
 			String resource = "com/smhrd/mybatis/mybatis-config.xml";
 			InputStream inputStream = Resources.getResourceAsStream(resource);
-			sqlSessionFactory =
 			sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 		} catch (Exception e) {
 			e.printStackTrace();
