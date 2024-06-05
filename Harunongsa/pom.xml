@@ -54,6 +54,11 @@
     <scope>provided</scope>
 </dependency>
 
+  	<dependency>
+  		<groupId>com.smhrd</groupId>
+  		<artifactId>maven_MessageSystem_board</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
   
   
