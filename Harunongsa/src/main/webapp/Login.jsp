@@ -32,7 +32,7 @@
             background-color: #f0f0f0;
         }
 
-        .containerlogin {
+        .container {
             align-items: center;
             display: flex;
             justify-content: center;
@@ -43,7 +43,7 @@
             text-align: center;
         }
 
-        .wrapperLogin {
+        .wrapper {
             align-items: center;
             display: flex;
             justify-content: center;
@@ -56,11 +56,11 @@
             background-color: #FCFCFC;
         }
 
-        .contentLogin {
+        .content {
             text-align: center;
         }
 
-        .inputLogin {
+        .input {
             margin-top: 5px;
             margin-bottom: 5px;
             border-radius: 10px;
@@ -95,22 +95,22 @@
 
 <body>
     <div id="root">
-        <div class="containerLogin">
-            <div class="wrapperLogin">
-                <div class="contentLogin">
+        <div class="container">
+            <div class="wrapper">
+                <div class="content">
                     <h1 class="Login">Login</h1>
                     <form action="LoginProgram" method="post">
-                        <input class="inputLogin" name="memberID" type="text" placeholder="아이디를 입력해주세요">
+                        <input class="input" name="memberID" type="text" placeholder="아이디를 입력해주세요">
                         <br>
-                        <input class="inputLogin" name="password" type="text" placeholder="비밀번호를 입력해주세요">
+                        <input class="input" name="password" type="text" placeholder="비밀번호를 입력해주세요">
                         <br>
                         <input class="btn1" type="submit" value="로그인">
                         <br>
-                        <button type="button" class="btn">회원가입</button>
+                        <button class="btn" type="button" >회원가입</button>
                         <br>
-                        <button type="button" class="btn">카카오로 로그인/회원가입</button>
+                        <button class="btn" type="button" >카카오로 로그인/회원가입</button>
                         <br>
-                        <button type="button" class="btn">아이디/패스워드 찾기</button>
+                        <button class="btn" type="button" >아이디/패스워드 찾기</button>
                     </form>
                 </div>
 

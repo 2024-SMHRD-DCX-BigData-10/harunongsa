@@ -30,7 +30,7 @@
             background-color: #f0f0f0;
         }
 
-        .containerSearch {
+        .container {
             align-items: center;
             display: flex;
             justify-content: center;
@@ -41,7 +41,7 @@
             text-align: center;
         }
 
-        .wrapperSearch {
+        .wrapper {
             align-items: center;
             display: flex;
             justify-content: center;
@@ -54,11 +54,11 @@
             background-color: #FCFCFC;
         }
 
-        .contentSearch{
+        .content{
             text-align: center;
         }
 
-        .inputSearch {
+        .input {
             margin-top: 5px;
             margin-bottom: 5px;
             border-radius: 10px;
@@ -91,9 +91,7 @@
 
         }
 
-        .visibility{
-  visibility: hidden;
-}
+        
     </style>
 
 
@@ -101,29 +99,29 @@
 </head>
 <body>
     <div id="root">
-        <div class="containerSearch">
-            <div class="wrapperSearch">
-                <div class="contentSearch">
+        <div class="container">
+            <div class="wrapper">
+                <div class="content">
                     <h1 class="Login">회원정보 찾기</h1>
 
     <form action="SearchProgram" method="post">
-        <input class="inputSearch" name="name" type="text" placeholder="이름을 입력해주세요">
+        <input class="input" name="name" type="text" placeholder="이름을 입력해주세요">
         <br>
-        <input class="inputSearch" name="email" type="text" placeholder="이메일을 입력해주세요">
+        <input class="input" name="email" type="text" placeholder="이메일을 입력해주세요">
         <br>
-        <input class="inputSearch" name="tel" type="text" placeholder="핸드폰 번호를 입력해주세요">
+        <input class="input" name="tel" type="text" placeholder="핸드폰 번호를 입력해주세요">
         <br>
         <input class="btn1" type="submit" value="아이디 찾기">
     </form>
 </div>
-<div class="contentSearch">
+<div class="content">
 
 <form action="SearchProgram" method="post">
-<input class="inputSearch" name="id" type="text" placeholder="아이디를 입력해주세요">
+<input class="input" name="id" type="text" placeholder="아이디를 입력해주세요">
 <br>
-<input class="inputSearch" name="name" type="text" placeholder="이름을 입력해주세요">
+<input class="input" name="name" type="text" placeholder="이름을 입력해주세요">
 <br>
-<input class="inputSearch" name="email" type="text" placeholder="이메일을 입력해주세요">
+<input class="input" name="email" type="text" placeholder="이메일을 입력해주세요">
 <br>
 <input class="btn1" type="submit" value="비밀번호 찾기">
 </form>
