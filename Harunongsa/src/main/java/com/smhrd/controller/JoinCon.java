@@ -38,6 +38,8 @@ public class JoinCon extends HttpServlet {
       System.out.println("phoneNumber : "+phoneNumber);
       System.out.println("email : "+email);
       System.out.println("preference : "+preference);
+      System.out.println("memberType : "+memberType);
+      System.out.println("joinedAt : "+joinedAt);
       
       // 3. DTO로 묶어주기
       MemDTO dto = new MemDTO(memberID, password, name, phoneNumber, email, preference, memberType, joinedAt);

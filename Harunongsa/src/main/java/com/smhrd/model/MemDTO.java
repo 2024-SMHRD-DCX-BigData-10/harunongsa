@@ -13,9 +13,11 @@ import lombok.RequiredArgsConstructor;
 //회원 
 
 @Getter
+@Setter
 @AllArgsConstructor
-@RequiredArgsConstructor
 @NoArgsConstructor
+@RequiredArgsConstructor
+
 public class MemDTO {
 
 	@NonNull private String memberID;
@@ -26,6 +28,7 @@ public class MemDTO {
 	private String preference;
 	private String memberType;
 	private String joinedAt;
+	
 	
 	
  // 회원 아이디 
