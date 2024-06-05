@@ -16,7 +16,7 @@ import com.smhrd.model.MemDTO;
  * Servlet implementation class LoginProgram
  */
 @WebServlet("/LoginProgram")
-public class LoginProgram extends HttpServlet {
+public class LoginCon extends HttpServlet {
    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
       System.out.println("[LoginProgram]");
       

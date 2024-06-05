@@ -11,7 +11,7 @@ import com.smhrd.model.MemDAO;
 import com.smhrd.model.MemDTO;
 
 @WebServlet("/JoinProgram")
-public class JoinProgram extends HttpServlet {
+public class JoinCon extends HttpServlet {
    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
       
       // Controller : View/Model에서 전달받은 데이터 처리 및 가공
