@@ -13,4 +13,8 @@
 	<select id="login" parameterType="MemDTO" resultType="String">
 		select name from members where memberid=#{memberID} and password=#{password}
 	</select>
+	
+	<delete id="delete" parameterType="MemDTO">
+		delete from members where memberid=#{memberID} and password=#{password}
+	</delete>
 </mapper>
