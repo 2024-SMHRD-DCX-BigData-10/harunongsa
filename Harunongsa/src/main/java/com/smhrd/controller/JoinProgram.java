@@ -29,6 +29,8 @@ public class JoinProgram extends HttpServlet {
       String phoneNumber = request.getParameter("phoneNumber");
       String email = request.getParameter("email");
       String preference = request.getParameter("preference");
+      String memberType = request.getParameter("memberType");
+      String joinedAt = request.getParameter("joinedAt");
       
       System.out.println("memberID : "+ memberID);
       System.out.println("password : "+password);
@@ -38,7 +40,7 @@ public class JoinProgram extends HttpServlet {
       System.out.println("preference : "+preference);
       
       // 3. DTO로 묶어주기
-      MemDTO dto = new MemDTO();
+      MemDTO dto = new MemDTO(memberID, password, name, phoneNumber, email, preference, memberType, joinedAt);
       
       // 4. 데이터를 DB에 넣어줄 join메소드 호출
       int row = new MemDAO().join(dto);
