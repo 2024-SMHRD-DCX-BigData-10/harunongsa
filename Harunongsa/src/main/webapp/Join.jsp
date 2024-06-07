@@ -37,7 +37,7 @@
                         <br>
                         <input class="input" name="preference" type="text" placeholder="선호도 입력해주세요">
                         <br>
-                        <input class="input" name="memberType" type="text" placeholder="멤버타입을 입력해주세요">
+                        <input type="hidden" value="1" class="input" name="memberType"  placeholder="멤버타입을 입력해주세요" >
                         <br>
                         <input class="input" name="joinedAt" type="text" placeholder="가입 날짜를 입력해주세요">
                         <br>

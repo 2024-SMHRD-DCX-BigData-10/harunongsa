@@ -26,7 +26,7 @@
                         <br>
                         <input class="btn1" type="submit" value="로그인">
                         <br>
-                        <button type="btn" class="btn">회원가입</button>
+                        <button type="btn" class="btn"> <a style="text-decoration:none;color:white;" href="./Join.jsp">회원가입</a> </button>
                         <br>
                         <a href="javascript:kakaoLogin();">
                             <img src="https://developers.kakao.com/tool/resource/static/img/button/login/full/ko/kakao_login_medium_narrow.png" alt="카카오 로그인 버튼">

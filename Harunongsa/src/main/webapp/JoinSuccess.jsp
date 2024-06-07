@@ -10,14 +10,18 @@
         @import url(./HarunongsaCss.css);
          </style>
 </head>
-<body>
+<body onload="javascript:window_onload()"
+>
     <div id="root">
         <div class="container">
             <div class="wrapper">
                 <div class="content">
                     <h1 class="Login">JoinSuccess</h1>
                     <h3>회원가입에 성공하였습니다.</h3>
-                     <a href="./Login.jsp">로그인하기</a>
+                    <h3>3초후 로그인 화면으로 이동합니다.</h3> 
+                    
+              
+                    <%response.sendRedirect("./Seconds_3");%>
                 </div>
 
 
