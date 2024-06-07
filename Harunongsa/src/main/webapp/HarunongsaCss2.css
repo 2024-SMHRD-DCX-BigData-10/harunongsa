@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/*Main*/
+/* Notify */
+/* InfoDetail */
+* {
+    box-sizing: border-box;
+}
+
+
+
+.containerM, .containerN {
+    width: 100%;
+    max-width: 422px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.headerM, .headerN {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+.headerM h1, .headerN h1 {
+    font-size: 1.2em;
+    margin: 0;
+}
+.headerM .icon, .headerN .icon {
+    font-size: 1.5em;
+}
+.contentM {
+    padding: 20px;
+}
+
+.contentN {
+    padding: 20px;
+    height: 100vh;
+}
+
+.InfosM {
+    display: flex;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.crop {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    text-align: center;
+}
+.crop img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.crop p {
+    font-size: 0.8em;
+    margin: 5px 0 0;
+}
+.recommended, .raise-child {
+    margin-bottom: 20px;
+}
+.recommended h2, .raise-child h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.recommended img, .raise-child img {
+    width: 100%;
+    border-radius: 10px;
+}
+.tags {
+    font-size: 0.8em;
+    color: #888;
+}
+
+/* Notify */
+.notificationN {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.notificationN img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.notificationN .details {
+    flex-grow: 1;
+}
+.notificationN .details p {
+    margin: 0;
+}
+.notificationN .details .time {
+    font-size: 0.8em;
+    color: #888;
+}
+.notificationN .icon {
+    font-size: 1.5em;
+    color: orange;
+}
+
+/* InfoDetail */
+
+#root {
+    background-image: url(https://images.unsplash.com/photo-1493552832879-f61d5dce6c9e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* 컨테이너 상하 정렬 */
+    justify-content: center;
+    /* 컨테이너 좌우 정렬 */
+    align-items: center;
+    /* height: 100vh; */
+    /* 웹브라우저 높잇값을 기준으로 영역의 크기가 정해짐 */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+        }
+
+        .crops-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .checkboxes {
+            margin: 15px 0;
+        }
+
+        .checkboxes label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .management {
+            background-color: #f0fff0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .management p {
+            margin: 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .management ul {
+            padding-left: 20px;
+            margin: 5px 0;
+            list-style-type: disc;
+            font-size: 14px;
+        }
+
+        .warning {
+            background-color: #ffe6e6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #b30000;
+        }
