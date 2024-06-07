@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.BufferedReader;
 import java.io.IOException;
+import org.json.JSONObject;
 
 @WebServlet("/KakaoCon")
 public class KakaoCon extends HttpServlet {
@@ -20,9 +21,10 @@ public class KakaoCon extends HttpServlet {
             sb.append(line);
         }
         String jsonData = sb.toString();
-        
+
         // 이메일 추출 (JSON 파싱)
-        String email = jsonData.split(":")[1].replaceAll("[\"}]", "").trim();
+        JSONObject jsonObject = new JSONObject(jsonData);
+        String email = jsonObject.getString("email");
 
         // 세션에 저장
         HttpSession session = request.getSession();
