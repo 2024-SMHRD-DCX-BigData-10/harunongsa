@@ -51,7 +51,7 @@ public class JoinCon extends HttpServlet {
       String moveURL;   
       if(row > 0) {
          System.out.println("회원가입 성공");
-         moveURL = "./Login.html";
+         moveURL = "./Login.jsp";
       }else {
          System.out.println("회원가입 실패");
          moveURL = "JoinFail.html";
