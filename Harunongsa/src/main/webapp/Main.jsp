@@ -15,7 +15,9 @@
         <div class="headerM">
             <div class="menu">☰</div>
             <h1>하루농사</h1>
+            <a href="Notify.jsp" style="hidden;text-decoration:none;">
             <div class="icon">🔔</div>
+            </a>
         </div>
         <div class="contentM">
             <h4>베란다에서 무엇을 키울 수 있을까요?</h2>
@@ -42,21 +44,14 @@
                 </div>
                 
             </div>
+            <a href="./InfoDetail.jsp" style="text-decoration:none;color:black;">
             <div class="recommended">
                 <h2>이달의 추천 농작물<br>토마토</h2>
                 <img src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bean sprouts">
                 <p class="tags">#쑥쑥 #금방</p>
             </div>
-            <div class="raise-child">
-                <h2>아이와 함께 키우면 좋아요!<br>토마토</h2>
-                <img src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Strawberry">
-                <p class="tags">#쑥쑥 #금방</p>
-            </div>
-            <div class="raise-child">
-                <h2>웰빙에 관심이 있다면?<br>토마토</h2>
-                <img src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Strawberry">
-                <p class="tags">#쑥쑥 #금방</p>
-            </div>
+            </a>
+            
         </div>
     </div>
 </div>

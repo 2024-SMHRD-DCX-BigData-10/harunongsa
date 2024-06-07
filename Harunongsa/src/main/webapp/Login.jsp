@@ -32,7 +32,7 @@
                             <img src="https://developers.kakao.com/tool/resource/static/img/button/login/full/ko/kakao_login_medium_narrow.png" alt="카카오 로그인 버튼">
                         </a>
                         <br>
-                        <button type="button" class="btn">아이디/패스워드 찾기</button>
+                        <button type="button" class="btn"><a style="text-decoration:none;color:white;" href="./IdPwSearch.jsp">아이디/패스워드 찾기</a></button>
                     </form>
                 </div>
             </div>
