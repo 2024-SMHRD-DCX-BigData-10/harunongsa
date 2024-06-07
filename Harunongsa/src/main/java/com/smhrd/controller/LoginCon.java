@@ -48,7 +48,7 @@ public class LoginCon extends HttpServlet {
          // +URLEncoder.encode(name, "UTF-8");
          
          // session을 통해서 name값 유지
-         moveURL = "LoginSuccess.jsp";
+         moveURL = "Main.jsp";
          
          HttpSession session = request.getSession();
          session.setAttribute("name", name);
