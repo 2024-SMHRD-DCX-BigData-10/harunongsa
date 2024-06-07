@@ -55,7 +55,7 @@ public class LoginCon extends HttpServlet {
          
       }else {
          System.out.println("로그인 실패");
-         moveURL = "LoginFail.jsp";
+         moveURL = "LoginFail.html";
       }
       
       response.sendRedirect(moveURL);
