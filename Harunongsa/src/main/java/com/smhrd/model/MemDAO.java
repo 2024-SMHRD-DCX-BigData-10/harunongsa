@@ -45,6 +45,18 @@ public class MemDAO {
 		
 		return row;
 	}
+	
+	 // 비밀번호 변경 메소드
+    public int updatePassword(String memberID, String oldPassword, String newPassword) {
+        SqlSession session = sqlSessionFactory.openSession(true);
+        MemDTO param = new MemDTO();
+        param.setMemberID(memberID);
+        param.setPassword(oldPassword);
+        param.setNewPassword(newPassword);
+        int row = session.update("updatePassword", param);
+        session.close();
+        return row;
+    }
 
 	
 }

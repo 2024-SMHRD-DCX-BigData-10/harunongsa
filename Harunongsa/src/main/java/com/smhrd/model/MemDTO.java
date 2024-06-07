@@ -28,8 +28,18 @@ public class MemDTO {
 	private String preference;
 	private String memberType;
 	private String joinedAt;
+	private String newPassword;
 	
-	
+	public MemDTO(@NonNull String memberID, @NonNull String password, String name, String phoneNumber, String email, String preference, String memberType, String joinedAt) {
+        this.memberID = memberID;
+        this.password = password;
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.preference = preference;
+        this.memberType = memberType;
+        this.joinedAt = joinedAt;
+    }
 	
  // 회원 아이디 
  

@@ -17,4 +17,9 @@
 	<delete id="delete" parameterType="MemDTO">
 		delete from members where memberid=#{memberID} and password=#{password}
 	</delete>
+	
+	<update id="updatePassword" parameterType="MemDTO">
+        update members set password=#{newPassword} where memberid=#{memberID} and password=#{oldPassword}
+    </update>
+    
 </mapper>
