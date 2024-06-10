@@ -8,7 +8,7 @@ import com.smhrd.mybatis.SqlSessionManager;
 public class DiaryDAO {
 	SqlSessionFactory sqlSessionFactory = SqlSessionManager.getSqlSession();
 	
-	// 게시글 작성
+	// 다이어리 작성
 	public int writeDiary(DiaryDTO dto) {
 		
 		int row = 0;
