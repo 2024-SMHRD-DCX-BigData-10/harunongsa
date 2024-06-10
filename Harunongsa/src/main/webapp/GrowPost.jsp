@@ -125,6 +125,30 @@
 
 resize: none;
 }
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #BEDC52;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #00a047;
+}
     </style>
 </head>
 
@@ -160,10 +184,9 @@ resize: none;
 
 
                         <div class="button-container">
-                            <button class="back-button">뒤로가기</button>
-                            <button class="submit-button" type="submit">제출하기</button>
-                        </div>
-
+    <a href="GrowPostManage.jsp" class="button-link">뒤로가기</a>
+    <a href="GrowPostManage.jsp" class="button-link">제출하기</a>
+</div>
 
                     </form>
 

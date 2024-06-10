@@ -94,7 +94,13 @@
 	<div id="root">
 		<div class="containerN">
 			<div class="headerN">
-				<div class="menu">☰</div>
+			
+			
+			
+<a href="MyPage.jsp" style="hidden;text-decoration:none;">
+	<div class="menu">☰</div>
+</a>
+			
 
 			</div>
 			<div class="contentN">

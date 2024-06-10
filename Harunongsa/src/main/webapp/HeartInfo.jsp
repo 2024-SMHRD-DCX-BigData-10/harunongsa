@@ -139,9 +139,15 @@
         <div id="root">
             <div class="containerN">
                 <div class="headerN">
-                    <div class="menu">☰</div>
+                
+                <a href="MyPage.jsp" style="hidden;text-decoration:none;color:black;">
+ <div class="menu">☰</div>
+</a>
+                   
                     <h1>찜 농작물</h1>
-                    <div class="notification-icon">🔔</div>
+                    <a href="Notify.jsp" style="hidden;text-decoration:none;">
+            <div class="icon">🔔</div>
+            </a>
 
                 </div>
                 <div class="contentN">

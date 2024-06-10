@@ -130,7 +130,7 @@
     </div>
 
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script>
+ <script>
     window.Kakao.init("116b838d93ac0e623fe6763d538b5b2e");
     
     function kakaoLogin() {

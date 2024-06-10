@@ -99,8 +99,12 @@
                     <div class="logout-confirmation">
                         <p>회원탈퇴 하시겠습니까?</p>
                         <div class="buttons">
+                        <a href="Login.jsp" style="hidden;text-decoration:none;">
                             <button class="yes">예</button>
+                          </a>
+                          <a href="MyPage.jsp" style="hidden;text-decoration:none;">
                             <button class="no">아니오</button>
+                            </a>
                         </div>
                     </div>
                 </div>

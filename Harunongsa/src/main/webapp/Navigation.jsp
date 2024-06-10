@@ -52,11 +52,26 @@ footer{
 
     <div id='wrapper'>
         <div class="icon-container">
-            <div class="icon">❤️</div>
-            <div class="icon">✏️</div>
-            <div class="icon">📰</div>
-            <div class="icon">🌱</div>
-            <div class="icon">💼</div>
+        
+        <a href="HeartInfo.jsp" style="hidden;text-decoration:none;">
+ <div class="icon">❤️</div>
+</a>
+        
+           <a href="GrowPost.jsp" style="hidden;text-decoration:none;">
+  <div class="icon">✏️</div>
+</a>
+           
+          <a href="GrowPostManage.jsp" style="hidden;text-decoration:none;">
+   <div class="icon">📰</div>
+</a>
+          <a href="EcoActivityMain.jsp" style="hidden;text-decoration:none;">
+   <div class="icon">🌱</div>
+</a>
+         
+         <a href="Store.jsp" style="hidden;text-decoration:none;">
+ <div class="icon">💼</div>
+</a>
+           
         </div>
       </div>
       <footer></footer>

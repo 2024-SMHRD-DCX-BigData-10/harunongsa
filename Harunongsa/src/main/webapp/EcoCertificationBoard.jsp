@@ -143,7 +143,12 @@
                         <!-- 추가 데이터는 여기에 -->
                     </tbody>
                 </table>
-                <button  class="create-button">글 작성하기</button>
+                
+                
+<a href="EcoCertificationPost.jsp" style="hidden;text-decoration:none;">
+<button  class="create-button">글 작성하기</button>
+</a>
+                
 
 
             </div>

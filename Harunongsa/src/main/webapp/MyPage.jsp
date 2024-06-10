@@ -95,9 +95,22 @@
             </div>
         </div>
         <div class="menu">
-            <div class="menu-item">회원정보수정</div>
-            <div class="menu-item">로그아웃</div>
-            <div class="menu-item">회원탈퇴</div>
+        
+        
+<a href="UpdateMemberMain.jsp" style="hidden;text-decoration:none;">
+ <div class="menu-item">회원정보수정</div>
+</a>
+        
+           <a href="LogoutMember.jsp" style="hidden;text-decoration:none;">
+ <div class="menu-item">로그아웃</div>
+</a>
+           
+           
+           <a href="DeleteMember.jsp" style="hidden;text-decoration:none;">
+ <div class="menu-item">회원탈퇴</div>
+</a>
+           
+           
         </div>
     </div>
 </div>

@@ -117,8 +117,14 @@
                         <li>무럭무럭 성장한 씨앗을 자랑 게시판에 올려보세요!</li>
                     </ol>
                     <div class="button-container">
-                        <button class="action-button" onclick="location.href='#'">씨앗 받으러 가기</button>
+                    <a href="EcoCertificationBoard.jsp" style="hidden;text-decoration:none;">
+                     <button class="action-button" onclick="location.href='#'">씨앗 받으러 가기</button>
+</a>
+                       <a href="EcoGrowBoard.jsp" style="hidden;text-decoration:none;">
                         <button class="action-button" onclick="location.href='#'">자랑하러 가기</button>
+                       
+</a>
+                       
                     </div>
 
                 </div>

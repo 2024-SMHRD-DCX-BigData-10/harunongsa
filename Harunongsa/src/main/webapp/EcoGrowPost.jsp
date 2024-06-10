@@ -1,177 +1,191 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>성장 게시글 작성</title>
-    <style>
-        #root {
-            background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            height: 100vh;
-            background-size: cover;
-        }
-
-        .container {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 100vh;
-            text-align: center;
-
-        }
-
-        .wrapper {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            background-color: #ffffff;
-            border: 5px solid #ffffff;
-            flex-direction: column;
-            height: 100vh;
-            padding: 30px;
-            width: 380px;
-            background-color: #FCFCFC;
-
-        }
-
-        .content {
-            text-align: center;
-        }
-
-
-
-        .image-container {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        .main-image {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        h1 {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .Grow-form {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .Grow-form label {
-            font-size: 14px;
-            margin-bottom: 5px;
-            color: #555;
-        }
-
-        .Grow-form input,
-        .Grow-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 14px;
-            box-sizing: border-box;
-        }
-
-        .Grow-form .inline-label {
-            display: inline;
-            margin-left: 5px;
-            font-size: 14px;
-            color: #555;
-        }
-
-        .Grow-form input[type="checkbox"] {
-            width: auto;
-            margin-right: 10px;
-        }
-
-        .Grow-form button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #BEDC52;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .Grow-form button:hover {
-            background-color: #00a047;
-        }
-
-
-        textarea {
-
-resize: none;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>성장 게시글 작성</title>
+<style>
+#root {
+	background-image:
+		url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	height: 100vh;
+	background-size: cover;
 }
-    </style>
+
+.container {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100vh;
+	text-align: center;
+}
+
+.wrapper {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	background-color: #ffffff;
+	border: 5px solid #ffffff;
+	flex-direction: column;
+	height: 100vh;
+	padding: 30px;
+	width: 380px;
+	background-color: #FCFCFC;
+}
+
+.content {
+	text-align: center;
+}
+
+.image-container {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.main-image {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+h1 {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.Grow-form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.Grow-form label {
+	font-size: 14px;
+	margin-bottom: 5px;
+	color: #555;
+}
+
+.Grow-form input, .Grow-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+.Grow-form .inline-label {
+	display: inline;
+	margin-left: 5px;
+	font-size: 14px;
+	color: #555;
+}
+
+.Grow-form input[type="checkbox"] {
+	width: auto;
+	margin-right: 10px;
+}
+
+.Grow-form button {
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #BEDC52;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.Grow-form button:hover {
+	background-color: #00a047;
+}
+
+textarea {
+	resize: none;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #BEDC52;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #00a047;
+}
+
+</style>
 </head>
 
 <body>
 
 
-    <div id="root">
-        <div class="container">
-            <div class="wrapper">
-                <div class="content">
+	<div id="root">
+		<div class="container">
+			<div class="wrapper">
+				<div class="content">
 
-                    <h1>성장글 작성하기</h1>
+					<h1>성장글 작성하기</h1>
 
-                    <form class="Grow-form">
+					<form class="Grow-form">
 
-                        <label for="image">사진</label>
-                        <input type="file" name="image" style="float: right;">
-
-
-                        <label for="PostName">글제목</label>
-                        <input type="text" id="PostName" name="title" placeholder="글제목을 입력하세요">
-
-                        <label for="content">글내용</label>
-                        <input type="text" id="content" name="content" placeholder="글내용을 입력하세요">
-
-                        <label for="seedname">농작물 이름</label>
-                        <input type="text" id="seedname" name="seedname" placeholder="농작물 이름을 입력하세요">
-
-                        <label for="memberid">작성자 이름</label>
-                        <input type="text" id="name" name="memberid" placeholder="이름을 입력하세요">
+						<label for="image">사진</label> <input type="file" name="image"
+							style="float: right;"> <label for="PostName">글제목</label>
+						<input type="text" id="PostName" name="title"
+							placeholder="글제목을 입력하세요"> <label for="content">글내용</label>
+						<input type="text" id="content" name="content"
+							placeholder="글내용을 입력하세요"> <label for="seedname">농작물
+							이름</label> <input type="text" id="seedname" name="seedname"
+							placeholder="농작물 이름을 입력하세요"> <label for="memberid">작성자
+							이름</label> <input type="text" id="name" name="memberid"
+							placeholder="이름을 입력하세요">
 
 
-                        <div class="button-container">
-                            <button class="back-button">뒤로가기</button>
-                            <button class="submit-button" type="submit">제출하기</button>
-                        </div>
+						 <div class="button-container">
+    <a href="EcoGrowBoard.jsp" class="button-link">뒤로가기</a>
+    <a href="EcoGrowBoard.jsp" class="button-link">제출하기</a>
+</div>
 
 
-                    </form>
+					</form>
 
 
 
 
-                </div>
-            </div>
-        </div>
-    </div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 
