@@ -6,8 +6,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
- @import url(./HarunongsaCss2.css);
+      <style>
+ * {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* InfoDetail */
+
+#root {
+    background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* 컨테이너 상하 정렬 */
+    justify-content: center;
+    /* 컨테이너 좌우 정렬 */
+    align-items: center;
+    /* height: 100vh; */
+    /* 웹브라우저 높잇값을 기준으로 영역의 크기가 정해짐 */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+        height: 100vh;
+    background-size: cover;
+}
+
+
+        .card {
+            background: #fff;
+           
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            height: 100vh;
+        }
+
+        .crops-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .checkboxes {
+            margin: 15px 0;
+        }
+
+        .checkboxes label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .management {
+            background-color: #f0fff0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .management p {
+            margin: 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .management ul {
+            padding-left: 20px;
+            margin: 5px 0;
+            list-style-type: disc;
+            font-size: 14px;
+        }
+
+        .warning {
+            background-color: #ffe6e6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #b30000;
+        }
     </style>
 </head>
 

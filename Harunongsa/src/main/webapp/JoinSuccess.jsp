@@ -1,12 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style>
-      * {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+       * {
             box-sizing: border-box;
         }
 
@@ -91,53 +92,29 @@
             width: 200px;
 
         }
-    </style>
+        
 
-
+         </style>
 </head>
-<body>
+<body onload="javascript:window_onload()"
+>
     <div id="root">
         <div class="container">
             <div class="wrapper">
                 <div class="content">
-                    <h1 class="Login">회원정보 찾기</h1>
-
-    <form action="SearchProgram" method="post">
-        <input class="input" name="name" type="text" placeholder="이름을 입력해주세요">
-        <br>
-        <input class="input" name="email" type="text" placeholder="이메일을 입력해주세요">
-        <br>
-        <input class="input" name="tel" type="text" placeholder="핸드폰 번호를 입력해주세요">
-        <br>
-        <input class="btn1" type="submit" value="아이디 찾기">
-    </form>
-</div>
-<div class="content">
-
-<form action="SearchProgram" method="post">
-<input class="input" name="id" type="text" placeholder="아이디를 입력해주세요">
-<br>
-<input class="input" name="name" type="text" placeholder="이름을 입력해주세요">
-<br>
-<input class="input" name="email" type="text" placeholder="이메일을 입력해주세요">
-<br>
-<input class="btn1" type="submit" value="비밀번호 찾기">
-</form>
-</div>
+                    <h1 class="Login">JoinSuccess</h1>
+                    <h3>회원가입에 성공하였습니다.</h3>
+                    <h3>3초후 로그인 화면으로 이동합니다.</h3> 
+                    
+              
+                    <%response.sendRedirect("./Seconds_3");%>
+                </div>
 
 
 
-</div>
-</div>
-</div>
-
-
-</body>
-</html>
-
-
-
-
+            </div>
+        </div>
+    </div>
 
 
 </body>
