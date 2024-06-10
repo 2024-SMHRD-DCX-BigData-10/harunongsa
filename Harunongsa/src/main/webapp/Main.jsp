@@ -110,7 +110,11 @@
 	<div id="root">
 		<div class="containerM">
 			<div class="headerM">
-				<div class="menu">☰</div>
+			<a href="MyPage.jsp" style="hidden;text-decoration:none;color:black;">
+<div class="menu">☰</div>
+</a>
+			
+				
 				<h1>하루농사</h1>
 				<a href="Notify.jsp" style="text-decoration: none;">
 					<div class="icon">🔔</div>
