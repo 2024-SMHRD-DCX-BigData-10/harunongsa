@@ -26,7 +26,7 @@
                         <br>
                         <input class="btn1" type="submit" value="로그인">
                         <br>
-                        <button type="btn" class="btn">회원가입</button>
+                        <button type="button" class="btn" onclick="location.href = 'Join.jsp'">회원가입</button>
                         <br>
                         <a href="javascript:kakaoLogin();">
                             <img src="https://developers.kakao.com/tool/resource/static/img/button/login/full/ko/kakao_login_medium_narrow.png" alt="카카오 로그인 버튼">
@@ -41,37 +41,47 @@
 
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
-        window.Kakao.init("116b838d93ac0e623fe6763d538b5b2e");
+    window.Kakao.init("116b838d93ac0e623fe6763d538b5b2e");
+    
+    function kakaoLogin() {
+        window.Kakao.Auth.login({
+            scope: 'profile_nickname, profile_image, account_email',
+            success: function(authObj) {
+                console.log(authObj);
+                window.Kakao.API.request({
+                    url: '/v2/user/me',
+                    success: res => {
+                        const kakao_account = res.kakao_account;
+                        console.log(kakao_account);
 
-        function kakaoLogin() {
-            window.Kakao.Auth.login({
-                scope: 'profile_nickname, profile_image, account_email',
-                success: function(authObj) {
-                    console.log(authObj);
-                    window.Kakao.API.request({
-                        url: '/v2/user/me',
-                        success: res => {
-                            const kakao_account = res.kakao_account;
-                            console.log(kakao_account);
-
-                            // AJAX 요청을 통해 서버로 데이터 전송
-                            const xhr = new XMLHttpRequest();
-                            xhr.open("POST", "KakaoCon");
-                            xhr.setRequestHeader("Content-Type", "application/json");
-                            xhr.onreadystatechange = function() {
-                                if (xhr.readyState === 4 && xhr.status === 200) {
-                                    console.log("서버로 데이터 전송 성공");
-                                    // 이메일 정보를 받아 회원가입 페이지로 리다이렉트
+                        // AJAX 요청을 통해 서버로 데이터 전송
+                        const xhr = new XMLHttpRequest();
+                        xhr.open("POST", "KakaoCon");
+                        xhr.setRequestHeader("Content-Type", "application/json");
+                        xhr.onreadystatechange = function() {
+                            if (xhr.readyState === 4 && xhr.status === 200) {
+                                const response = JSON.parse(xhr.responseText);
+                                console.log("서버로 데이터 전송 성공");
+                                if (response.status === "login") {
+                                    // 로그인 성공 처리
+                                    console.log(response.message);
+                                    // 로그인 후 페이지 이동 (예: 메인 페이지)
+                                    window.location.href = "Main.jsp";
+                                } else if (response.status === "signup") {
+                                    // 회원가입 페이지로 이동
+                                    console.log(response.message);
                                     window.location.href = "Join.jsp";
                                 }
-                            };
-                            const data = JSON.stringify({ email: kakao_account.email });
-                            xhr.send(data);
-                        }
-                    });
-                }
-            });
-        }
-    </script>
+                            }
+                        };
+                        const data = JSON.stringify({ email: kakao_account.email });
+                        xhr.send(data);
+                    }
+                });
+            }
+        });
+    }
+</script>
+
 </body>
 </html>
