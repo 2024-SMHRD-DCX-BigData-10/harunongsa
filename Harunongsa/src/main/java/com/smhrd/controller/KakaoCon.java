@@ -9,9 +9,16 @@ import javax.servlet.http.HttpSession;
 import java.io.BufferedReader;
 import java.io.IOException;
 import org.json.JSONObject;
+import org.apache.ibatis.session.SqlSessionFactory;
+import com.smhrd.model.MemDTO;
+import com.smhrd.model.MemDAO;
+import com.smhrd.util.MyBatisUtil; // MyBatisUtil 클래스 임포트
 
 @WebServlet("/KakaoCon")
 public class KakaoCon extends HttpServlet {
+    private SqlSessionFactory sqlSessionFactory = MyBatisUtil.getSqlSessionFactory();
+    private MemDAO memDAO = new MemDAO(); // MemDAO 인스턴스 생성
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         StringBuilder sb = new StringBuilder();
@@ -26,13 +33,26 @@ public class KakaoCon extends HttpServlet {
         JSONObject jsonObject = new JSONObject(jsonData);
         String email = jsonObject.getString("email");
 
-        // 세션에 저장
+        // DB에서 이메일 확인 및 처리
+        MemDTO user = memDAO.getUserByEmail(email); // 수정된 부분
         HttpSession session = request.getSession();
-        session.setAttribute("email", email);
+        JSONObject responseJson = new JSONObject();
+
+        if (user != null) {
+            // 이메일이 존재하는 경우 로그인 처리
+            session.setAttribute("user", user);
+            responseJson.put("status", "login");
+            responseJson.put("message", "로그인 성공");
+        } else {
+            // 이메일이 존재하지 않는 경우 회원가입 페이지로 이동
+            session.setAttribute("email", email);
+            responseJson.put("status", "signup");
+            responseJson.put("message", "회원가입 페이지로 이동");
+        }
 
         // 응답 설정
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
-        response.getWriter().write("{\"status\":\"success\"}");
+        response.getWriter().write(responseJson.toString());
     }
 }
