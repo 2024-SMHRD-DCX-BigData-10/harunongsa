@@ -95,7 +95,11 @@ button:hover {
     <div id="root">
     <div class="container">
         <header>
-            <div class="menu-icon">☰</div>
+        
+        <a href="MyPage.jsp" style="hidden;text-decoration:none;">
+<div class="menu-icon">☰</div>
+</a>
+            
             <h1>회원정보 수정</h1>
             <div></div>
         </header>
