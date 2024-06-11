@@ -5,16 +5,16 @@ import org.apache.ibatis.session.SqlSessionFactory;
 
 import com.smhrd.mybatis.SqlSessionManager;
 
-public class GardenDAO {
+public class GrowthDAO {
 	SqlSessionFactory sqlSessionFactory = SqlSessionManager.getSqlSession();
 	
 	// 다이어리 작성
-	public int writeGarden(GardenDTO dto) {
+	public int writeGrowth(GrowthDTO dto) {
 		
 		int row = 0;
 		SqlSession session = sqlSessionFactory.openSession(true);
 	
-		row = session.insert("garden", dto);
+		row = session.insert("grow", dto);
 		
 		session.close();
 		return row;

@@ -15,17 +15,13 @@ import lombok.ToString;
 @Getter
 @ToString
 
-public class DiaryDTO { 
+public class GrowthDTO {
 	
-	@NonNull private int diaryidx;
+	@NonNull private int growthpostid;
+	@NonNull private String title;
+	@NonNull private String content;
+	@NonNull private String image;
+	@NonNull private String seedname;
 	@NonNull private String memberid;
-	@NonNull private int cropidx;
-	@NonNull private String diarytitle;
-	@NonNull private String diarycontent;
-	@NonNull private String diaryimg1;
-	@NonNull private String diaryimg2;
-	private Date createdat;
-	
-	
-	
+	private Date date;
 }
