@@ -27,6 +27,6 @@
   <!-- mapper 파일 등록 -->
   <mappers>
     <mapper resource="com/smhrd/mapper/Mapper.xml"/>
- 
+    <mapper resource="com/smhrd/mapper/BoardMapper.xml"/>
   </mappers>
 </configuration>

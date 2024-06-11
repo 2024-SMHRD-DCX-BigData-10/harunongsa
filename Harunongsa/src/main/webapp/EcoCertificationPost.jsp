@@ -136,35 +136,42 @@ textarea {
 			<div class="wrapper">
 				<div class="content">
 
-					<h1>인증글 작성하기</h1>
+	<h1>인증글 작성하기</h1>
 
-					<form class="certification-form">
+	<form class="certification-form" action="GardenCon" method="post" enctype="multipart/form-data">
+    <input type="hidden" id="certidx" name="certidx" value="0">
+    
+    <label for="image">사진</label>
+    <input type="file" name="img" style="float: right;">
+    
+    <label for="PostName">글제목</label>
+    <input type="text" id="PostName" name="title" placeholder="글 제목을 입력하세요">
+    
+    <label for="content">내용</label>
+    <textarea id="content" name="content" rows="5" placeholder="활동 내용을 입력하세요"></textarea>
+    
+    <label for="seed">받고 싶은 씨앗 상추/치커리</label>
+    <input type="text" id="seed" name="desiredseed" placeholder="씨앗을 입력하세요">
+    
+    <label for="address">수령자 주소</label>
+    <input type="text" id="address" name="deliaddr" placeholder="주소를 입력하세요">
+    
+    <label for="name">수령자 이름</label>
+    <input type="text" id="name" name="recipientname" placeholder="이름을 입력하세요">
+    
+    <label for="phone">수령자 전화번호</label>
+    <input type="text" id="phone" name="recipientphone" placeholder="전화번호를 입력하세요">
+    
+    <label for="agree">공개 여부</label>
+    <input type="checkbox" id="agree" name="issecret">
+    <input type="hidden" value="session.memberid" name="memberid">
+    
+    <div class="button-container">
+        <a href="EcoCertificationBoard.jsp" class="button-link">뒤로가기</a>
+        <button type="submit" class="button-link">제출하기</button>
+    </div>
+</form>
 
-						<label for="image">사진</label> <input type="file" name="filename"
-							style="float: right;"> <label for="PostName">글제목</label>
-						<input type="text" id="PostName" name="PostName"
-							placeholder="글 제목을 입력하세요"> <label for="content">내용</label>
-						<textarea id="content" name="content" rows="5"
-							placeholder="활동 내용을 입력하세요"></textarea>
-
-						<label for="seed">받고 싶은 씨앗 상추/치커리</label> <input type="text"
-							id="seed" name="seed" placeholder="씨앗을 입력하세요"> <label
-							for="address">수령자 주소</label> <input type="text" id="address"
-							name="address" placeholder="주소를 입력하세요"> <label for="name">수령자
-							이름</label> <input type="text" id="name" name="name"
-							placeholder="이름을 입력하세요"> <label for="phone">수령자
-							전화번호</label> <input type="text" id="phone" name="phone"
-							placeholder="전화번호를 입력하세요"> <label for="agree">공개
-							여부</label> <input type="checkbox" id="agree" name="agree"> <input
-							type="hidden" value="session.memberid" name="memberid">
-
-						<div class="button-container">
-							<a href="EcoCertificationBoard.jsp" class="button-link">뒤로가기</a>
-							<a href="EcoCertificationBoard.jsp" class="button-link">제출하기</a>
-						</div>
-
-
-					</form>
 
 
 

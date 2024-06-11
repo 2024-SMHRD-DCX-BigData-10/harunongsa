@@ -26,6 +26,6 @@ public class GardenDTO {
 	@NonNull private String deliaddr;
 	@NonNull private String recipientphone;
 	@NonNull private String memberid;
-	private Date date;
+	private Date createdat;
 }
 

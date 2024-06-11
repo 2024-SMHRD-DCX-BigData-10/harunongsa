@@ -1,5 +1,13 @@
+<%@page import="org.apache.ibatis.reflection.SystemMetaObject"%>
+<%@ page import = "java.util.List" %>
+<%@ page import = "com.smhrd.model.GardenDTO" %>
+<%@ page import = "com.smhrd.model.GardenDAO" %>
+<%@ page import = "java.util.ArrayList" %>
+<%@ page import="java.text.SimpleDateFormat"%>
+<%@ page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -116,9 +124,12 @@
 </head>
 
 <body>
-   
+   		<!-- 인증 게시판 목록 조회 기능 -->
+   		<%
+   			List<GardenDTO> Certigarden = new GardenDAO().allGarden();
+   			System.out.print(Certigarden.size());
+   		%>
         <div class="container">
-            
             <div class="header">
                 <div class="menu">☰</div>
                 <h1>인증 게시판</h1>
@@ -135,6 +146,23 @@
                             <th>작성자</th>
                             <th>시간</th>
                         </tr>
+                       <% for(GardenDTO g: Certigarden){ %>
+                    	   <tr>
+                    	   		<td><%= g.getCertidx() %></td>
+                    	   		<td><%= g.getTitle() %></td>
+                    	   		<td><%= g.getMemberid() %></td>
+                    	   		<td><%= g.getCreatedat() %></td>
+                    	   </tr>
+                    	   
+                       <%}%>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                     </thead>
                     <tbody>
                         <!-- 예시 데이터 -->

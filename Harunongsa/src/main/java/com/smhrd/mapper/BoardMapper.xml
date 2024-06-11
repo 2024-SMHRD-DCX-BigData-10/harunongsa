@@ -9,10 +9,15 @@
 		insert into diaries values(#{diaryidx}, #{memberid}, #{cropidx}, #{diarytitle}, #{diarycontent}, #{diaryimg1}, #{diaryimg2}, sysdate)
 	</insert>
 	
-	<insert id="garden" parameterType = "GardenDTO">
-		insert into certigarden values(#{certidx}, #{title}, #{content}, #{img}, #{issecret}, #{desiredseed}, #{recipientname}, #{deliaddr}, #{recipientphone}, #{memberid}, sysdate)
-	</insert>
-	
+	 <insert id="garden" parameterType="GardenDTO">
+        insert into certigarden values (#{certidx}, #{title}, #{content}, #{img}, #{issecret}, #{desiredseed}, #{recipientname}, #{deliaddr}, #{recipientphone}, #{memberid}, sysdate)
+    </insert>
+    
+    <select id="allGarden" resultType="GardenDTO">
+    	select certidx, title, content, img, issecret, desiredseed, recipientname, deliaddr, recipientphone, memberid, createdat 
+    	from certigarden
+	</select>
+
 	<insert id="growth" parameterType = "GrowthDTO">
 		insert into growthpost values(#{growthpostid}, #{title}, #{content}, #{image}, #{seedname}, #{memberid}, #{timestamp})
 	</insert>

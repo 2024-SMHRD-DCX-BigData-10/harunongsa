@@ -52,6 +52,7 @@ public class LoginCon extends HttpServlet {
          
          HttpSession session = request.getSession();
          session.setAttribute("name", name);
+         session.setAttribute("memberid", memberID);
          
       }else {
          System.out.println("로그인 실패");

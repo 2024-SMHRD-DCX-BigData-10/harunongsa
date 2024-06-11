@@ -41,6 +41,7 @@ public class KakaoCon extends HttpServlet {
         if (user != null) {
             // 이메일이 존재하는 경우 로그인 처리
             session.setAttribute("user", user);
+            session.setAttribute("memberid", user.getMemberID());
             responseJson.put("status", "login");
             responseJson.put("message", "로그인 성공");
         } else {
