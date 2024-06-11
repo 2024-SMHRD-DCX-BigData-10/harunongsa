@@ -38,21 +38,17 @@ body {
     transform: scale(1.1);
 }
 
-#wrapper{
+#wrapperF{
   height: auto;
   min-height: 100%;
   padding-bottom: (footer높이);
 }
-footer{
-  height: (footer높이);
-  position : relative;
-  transform : translateY(-100%);
-}
+
    </style>
 </head>
 <body>
 
-    <div id='wrapper'>
+    <div id='wrapperF'>
         <div class="icon-container">
         
         <a href="HeartInfo.jsp" style="hidden;text-decoration:none;">
@@ -76,7 +72,7 @@ footer{
            
         </div>
       </div>
-      <footer></footer>
+   
     
 
 

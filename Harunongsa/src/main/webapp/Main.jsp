@@ -102,6 +102,32 @@ body{
     background-size: cover;
 }
 
+.icon-containerF {
+    display: flex;
+    justify-content: space-between; /* 아이콘들 사이의 간격을 균등하게 조정 */
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+    width: 380px; /* 너비를 420px로 설정 */
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-size: 17px; /* 아이콘의 폰트 크기를 50px로 설정 */
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+#wrapperF{
+  height: auto;
+  min-height: 100%;
+  padding-bottom: (footer높이);
+}
 
     </style>
 </head>
@@ -168,9 +194,38 @@ body{
 							<p class="tags">#쑥쑥 #금방</p>
 						</div>
 					</a>
-					<%--@inclue file = "Navigation.jsp" --%>
+					
+					
+					<!--  -->
+					
+					  <div id='wrapperF'>
+        <div class="icon-containerF">
+        
+        <a href="HeartInfo.jsp" style="hidden;text-decoration:none;">
+ <div class="icon">❤️</div>
+</a>
+        
+           <a href="GrowPost.jsp" style="hidden;text-decoration:none;">
+  <div class="icon">✏️</div>
+</a>
+           
+          <a href="GrowPostManage.jsp" style="hidden;text-decoration:none;">
+   <div class="icon">📰</div>
+</a>
+          <a href="EcoActivityMain.jsp" style="hidden;text-decoration:none;">
+   <div class="icon">🌱</div>
+</a>
+         
+         <a href="Store.jsp" style="hidden;text-decoration:none;">
+ <div class="icon">💼</div>
+</a>
+           
+        </div>
+      </div>
+   
+    
+					<!--  -->
 			</div>
-		</div>
 	</div>
 </body>
 </html>
