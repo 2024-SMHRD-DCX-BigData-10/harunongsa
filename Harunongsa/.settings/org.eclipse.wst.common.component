@@ -27,17 +27,10 @@
         
         
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resource"/>
-                        
-        
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
-                
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/util"/>
-<<<<<<< HEAD
-                                        
-=======
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
                                                 
         
->>>>>>> branch 'master' of https://github.com/2024-SMHRD-DCX-BigData-10/harunongsa.git
         
         
         
