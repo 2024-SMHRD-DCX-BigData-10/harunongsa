@@ -6,9 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그아웃 확인</title>
-    <style>
-        #root {
+    <title>회원 삭제</title>
+   <style>
+*{box-sizing: border-box;}
+
+        body{
             background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
             margin: 0;
             padding: 0;
@@ -17,23 +19,24 @@
             align-items: center;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            height: 100vh;
+            min-height: 100vh; /* 변경됨 */
             background-size: cover;
+            overflow-y: auto; /* 추가됨 */
         }
 
         .container {
-            align-items: center;
+            
             display: flex;
-            justify-content: center;
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 100vh;
-            text-align: center;
-            width: 420px;
-            padding: 0px;
-            margin: 0px;
-            height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 420px;
+    /* margin: 20px; 변경됨 */
+    padding: 20px; /* 변경됨 */
+    width: 100%;
+            
         } 
 
         .wrapper {
@@ -43,7 +46,7 @@
             background-color: #ffffff;
             border: 5px solid #ffffff;
             flex-direction: column;
-            background-color: #FCFCFC;
+            background-color: #ffffff;
             height: 100vh;
         }
 
@@ -52,14 +55,7 @@
             background-color: white;
         }
 
-        .container {
-            width: 422px;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         
-            text-align: center;
-        }
 
         .logout-confirmation {
             background-color:  #BEDC52;
@@ -67,6 +63,7 @@
             padding: 20px;
             border-radius: 20px;
             margin: 20px 0;
+       
 
         }
 
@@ -92,7 +89,7 @@
 </head>
 
 <body>
-    <div id="root">
+    
         <div class="container">
             <div class="wrapper">
                 <div class="content">
@@ -111,7 +108,7 @@
             </div>
 
         </div>
-    </div>
+    
 </body>
 
 </html>

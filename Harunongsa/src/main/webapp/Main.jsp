@@ -5,106 +5,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
+   <title>메인 페이지</title>
+    <style>
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
+
+
 
 .containerM {
-	width: 100%;
-	max-width: 422px;
-	margin: auto;
-	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	overflow: hidden;
-	height: 100vh;
+    width: 100%;
+    max-width: 422px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+    overflow: hidden;
+    height: 100vh;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0;
 }
-
 .headerM {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 20px;
-	background-color: #fff;
-	border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
 }
-
 .headerM h1 {
-	font-size: 1.2em;
-	margin: 0;
+    font-size: 1.2em;
+    margin: 0;
 }
-
 .headerM .icon {
-	font-size: 1.5em;
+    font-size: 1.5em;
+}
+.contentM {
+    padding: 20px;
 }
 
-.contentM {
-	padding: 20px;
-}
 
 .InfosM {
-	display: flex;
-	overflow-x: hidden;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-	border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
 }
-
 .crop {
-	flex: 0 0 auto;
-	margin-right: 10px;
-	text-align: center;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    text-align: center;
 }
-
 .crop img {
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	object-fit: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
-
 .crop p {
-	font-size: 0.8em;
-	margin: 5px 0 0;
+    font-size: 0.8em;
+    margin: 5px 0 0;
 }
-
 .recommended, .raise-child {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
-
 .recommended h2, .raise-child h2 {
-	font-size: 1em;
-	margin-bottom: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
 }
-
 .recommended img, .raise-child img {
-	width: 100%;
-	border-radius: 10px;
+    width: 100%;
+    border-radius: 10px;
 }
-
 .tags {
-	font-size: 0.8em;
-	color: #888;
+    font-size: 0.8em;
+    color: #888;
 }
 
-#root {
-	background-image:
-		url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-	margin: 0;
-	padding: 0;
-	display: flex;
-	/* 컨테이너 상하 정렬 */
-	justify-content: center;
-	/* 컨테이너 좌우 정렬 */
-	align-items: center;
-	/* height: 100vh; */
-	/* 웹브라우저 높잇값을 기준으로 영역의 크기가 정해짐 */
-	font-family: Arial, sans-serif;
-	background-color: #f0f0f0;
-	height: 100vh;
-	background-size: cover;
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* 컨테이너 상하 정렬 */
+    justify-content: center;
+    /* 컨테이너 좌우 정렬 */
+    align-items: center;
+    /* height: 100vh; */
+    /* 웹브라우저 높잇값을 기준으로 영역의 크기가 정해짐 */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+        height: 100vh;
+    background-size: cover;
 }
-</style>
+
+
+    </style>
 </head>
 <body>
 	<div id="root">

@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이콘 예제</title>
+    <title>네비게이션</title>
    <style>
-
+  *{box-sizing: border-box;}
 body {
     display: flex;
     justify-content: center;
@@ -19,10 +19,11 @@ body {
 
 .icon-container {
     display: flex;
-    gap: 20px;
+    justify-content: space-between; /* 아이콘들 사이의 간격을 균등하게 조정 */
     background-color: white;
     align-items: center;
     padding: 10px;
+    width: 420px; /* 너비를 420px로 설정 */
 }
 
 .icon {
@@ -30,6 +31,7 @@ body {
     height: 25px;
     cursor: pointer;
     transition: transform 0.2s;
+    font-size: 17px; /* 아이콘의 폰트 크기를 50px로 설정 */
 }
 
 .icon:hover {

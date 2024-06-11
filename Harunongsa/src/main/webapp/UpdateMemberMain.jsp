@@ -5,11 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원정보 수정</title>
+   <title>회원 정보 수정 페이지</title>
    <style>
 
-
-#root {
+*{box-sizing: border-box;}
+body {
             background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
             margin: 0;
             padding: 0;
@@ -28,12 +28,16 @@
 
 
 .container {
-    width: 300px;
+  
     background-color: white;
-    padding: 20px;
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+   
     height: 100vh;
+    max-width: 420px;
+    width: 420px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 header {
@@ -58,6 +62,8 @@ h1 {
 
 .form-group {
     margin-bottom: 15px;
+    margin: 10px;
+    
 }
 
 label {
@@ -75,7 +81,7 @@ input {
 }
 
 button {
-    width: 100%;
+    width: 200px;
     padding: 10px;
     background-color: #28a745;
     color: white;
@@ -83,17 +89,23 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+   
+    display: block;
+    margin: 10px auto;
 }
 
 button:hover {
     background-color: #218838;
 }
 
+#box {margin: 10px;}
+
    </style>
 </head>
 <body>
-    <div id="root">
+   
     <div class="container">
+     <div id="box">
         <header>
         
         <a href="MyPage.jsp" style="hidden;text-decoration:none;">

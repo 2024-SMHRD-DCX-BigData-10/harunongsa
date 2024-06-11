@@ -6,10 +6,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>친환경 활동 인증</title>
+<title>친환경 활동 게시글 작성</title>
 <style>
-/* styles.css */
-#root {
+* {
+	box-sizing: border-box;
+}
+
+body {
 	background-image:
 		url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 	margin: 0;
@@ -32,6 +35,9 @@
 	background-size: contain;
 	height: 100vh;
 	text-align: center;
+	max-width: 420px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .wrapper {
@@ -42,9 +48,8 @@
 	border: 5px solid #ffffff;
 	flex-direction: column;
 	height: 100vh;
-	padding: 30px;
-	width: 380px;
 	background-color: #FCFCFC;
+	width: 420px;
 }
 
 .content {
@@ -82,7 +87,6 @@ h1 {
 
 .certification-form input, .certification-form textarea {
 	width: 100%;
-	padding: 10px;
 	margin-bottom: 20px;
 	border: 1px solid #ddd;
 	border-radius: 5px;
@@ -102,7 +106,7 @@ h1 {
 	margin-right: 10px;
 }
 
-.certification-form button {
+.certification-form a {
 	padding: 10px 20px;
 	font-size: 16px;
 	background-color: #BEDC52;
@@ -111,38 +115,15 @@ h1 {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+text-decoration:none;
 }
 
-.certification-form button:hover {
+.certification-form a:hover {
 	background-color: #00a047;
 }
 
 textarea {
 	resize: none;
-}
-
-
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.button-link {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #BEDC52;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.button-link:hover {
-    background-color: #00a047;
 }
 </style>
 </head>
@@ -178,9 +159,9 @@ textarea {
 							type="hidden" value="session.memberid" name="memberid">
 
 						<div class="button-container">
-    <a href="EcoCertificationBoard.jsp" class="button-link">뒤로가기</a>
-    <a href="EcoCertificationBoard.jsp" class="button-link">제출하기</a>
-</div>
+							<a href="EcoCertificationBoard.jsp" class="button-link">뒤로가기</a>
+							<a href="EcoCertificationBoard.jsp" class="button-link">제출하기</a>
+						</div>
 
 
 					</form>

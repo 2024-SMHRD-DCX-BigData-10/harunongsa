@@ -5,19 +5,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그아웃 확인</title>
+   <title>로그아웃</title>
    <style>
 
 
-
+*{box-sizing: border-box;}
 .container {
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: white;
-    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
     text-align: center;
-   
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0;
+    width: 420px;
+    height: 100vh;
 }
 
 .logout-confirmation {
@@ -26,6 +31,9 @@
     padding: 20px;
     border-radius: 20px;
     margin: 20px 0;
+    width: 250px;
+
+    
 }
 
 .logout-confirmation p {
@@ -57,7 +65,7 @@ button {
     margin-top: 10px;
     cursor: pointer;
 }
-#root {
+body {
             background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
             margin: 0;
             padding: 0;
