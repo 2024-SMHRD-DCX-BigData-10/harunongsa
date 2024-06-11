@@ -6,9 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>성장 게시글 작성</title>
+   <title>일지 작성</title>
     <style>
-        #root {
+          *{box-sizing: border-box;}
+          
+        body{
             background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
             margin: 0;
             padding: 0;
@@ -31,6 +33,11 @@
             height: 100vh;
             text-align: center;
 
+
+            max-width: 420px;
+    margin: 0 auto;
+    padding: 0;
+
         }
 
         .wrapper {
@@ -41,15 +48,13 @@
             border: 5px solid #ffffff;
             flex-direction: column;
             height: 100vh;
-            padding: 30px;
-            width: 380px;
+            
             background-color: #FCFCFC;
-
+            width: 420px;
         }
 
         .content {
             text-align: center;
-            height: 100vh;
         }
 
 
@@ -106,7 +111,7 @@
             margin-right: 10px;
         }
 
-        .Grow-form button {
+        .Grow-form a {
             padding: 10px 20px;
             font-size: 16px;
             background-color: #BEDC52;
@@ -115,9 +120,10 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+           	text-decoration:none;
         }
 
-        .Grow-form button:hover {
+        .Grow-form a:hover {
             background-color: #00a047;
         }
 
@@ -125,37 +131,13 @@
 
 resize: none;
 }
-
-
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.button-link {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #BEDC52;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.button-link:hover {
-    background-color: #00a047;
-}
     </style>
 </head>
 
 <body>
 
 
-    <div id="root">
+   
         <div class="container">
             <div class="wrapper">
                 <div class="content">
@@ -196,7 +178,7 @@ resize: none;
                 </div>
             </div>
         </div>
-    </div>
+    
 
 </body>
 

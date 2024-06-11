@@ -6,9 +6,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>인증 게시판</title>
-    <style>
-        #root {
+   <title>친환경 활동 인증 게시판</title>
+      <style>
+          *{box-sizing: border-box;}
+        body {
             background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
             margin: 0;
             padding: 0;
@@ -63,12 +64,16 @@
         {
             width: 100%;
             max-width: 422px;
-            margin: auto;
+          
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
            
             overflow: hidden;
             height: 100vh;
+
+            max-width: 420px;
+    margin: 0 auto;
+    padding: 0;
         }
 
         .wrapper {
@@ -79,9 +84,8 @@
             border: 5px solid #ffffff;
             flex-direction: column;
             height: 100vh;
-            padding: 30px;
-            width: 380px;
-            background-color: #FCFCFC;
+           
+            background-color: #ffffff;
         }
 
         .header {
@@ -112,7 +116,7 @@
 </head>
 
 <body>
-    <div id="root">
+   
         <div class="container">
             
             <div class="header">
@@ -152,7 +156,7 @@
 
 
             </div>
-        </div>
+        
     </div>
 </body>
 

@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>일지 관리</title>
     <style>
-  
-        #root {
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
             background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
             margin: 0;
             padding: 0;
@@ -20,12 +23,45 @@
             height: 100vh;
             background-size: cover;
         }
+        .container {
+            width: 100%;
+            width: 420px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            height: 100vh;
+            max-width: 420px;
+            margin: 0 auto;
+            padding: 0px;
+
+        }
+
+        
+        .wrapper {
+           
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            border: 5px solid #ffffff;
+            flex-direction: column;
+            height: 100vh;
+
+            background-color: #FCFCFC;
+            
+         
+            
+         
+        }
+
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
-          
+            padding: 20px;
+            
+
         }
 
         thead {
@@ -37,6 +73,7 @@
             padding: 10px;
             border: 1px solid #ddd;
             text-align: center;
+            font-size: small;
         }
 
         tbody tr:nth-child(even) {
@@ -44,7 +81,7 @@
         }
 
         .create-button {
-            background-color:#BEDC52;
+            background-color: #BEDC52;
             color: black;
             border: none;
             border-radius: 5px;
@@ -60,31 +97,7 @@
         }
 
 
-        .container
-        {
-            width: 100%;
-            max-width: 422px;
-            margin: auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-       
-            overflow: hidden;
-            width: 448px;
-            height: 100vh;
-        }
-
-        .wrapper {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            background-color: #ffffff;
-            border: 5px solid #ffffff;
-            flex-direction: column;
-            height: 100vh;
-            padding: 30px;
-            width: 380px;
-            background-color: #FCFCFC;
-        }
+        
 
         .header {
             display: flex;
@@ -106,32 +119,34 @@
 
         .content {
             padding: 20px;
-         
+            margin: 20px;
+
+
         }
 
-        
-.edit-btn, .delete-btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-.edit-btn:hover {
-    background-color: #0056b3;
-}
+        .edit-btn,
+        .delete-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-.delete-btn {
-    background-color: #dc3545;
-}
+        .edit-btn:hover {
+            background-color: #0056b3;
+        }
 
-.delete-btn:hover {
-    background-color: #c82333;
-}
-      
+        .delete-btn {
+            background-color: #dc3545;
+        }
+
+        .delete-btn:hover {
+            background-color: #c82333;
+        }
     </style>
   
 </head>

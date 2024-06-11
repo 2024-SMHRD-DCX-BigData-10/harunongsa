@@ -6,10 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eco activity</title>
-    <style>
-        /* styles.css */
-        #root {
+     <title>친환경 활동 메인 페이지</title>
+       <style>
+        *{box-sizing: border-box;}
+        
+        body{
             background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
             margin: 0;
             padding: 0;
@@ -31,7 +32,11 @@
             background-size: contain;
             height: 100vh;
             text-align: center;
+            max-width: 420px;
+    margin: 0 auto;
+    padding: 0;
            
+          
         }
 
         .wrapper {
@@ -42,9 +47,9 @@
             border: 5px solid #ffffff;
             flex-direction: column;
             height: 100vh;
-            padding: 30px;
-            width: 380px;
-            background-color: #FCFCFC;
+           
+           
+            background-color: #ffffff;
         }
 
         .content {
@@ -101,7 +106,7 @@
 
 <body>
 
-    <div id="root">
+  
         <div class="container">
             <div class="wrapper">
                 <div class="content">
@@ -127,7 +132,7 @@
                        
                     </div>
 
-                </div>
+                
             </div>
         </div>
     </div>

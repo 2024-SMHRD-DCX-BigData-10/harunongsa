@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>알림 페이지</title>
 <style>
 * {
     box-sizing: border-box;
@@ -14,12 +15,15 @@
 
  .containerN {
     width: 100%;
-    max-width: 422px;
-    margin: auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    height: 100vh;
     overflow: hidden;
+
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0;
+    width: 420px;
 }
  .headerN {
     display: flex;
@@ -72,7 +76,7 @@
     color: orange;
 }
 
-#root {
+body {
     background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     margin: 0;
     padding: 0;
@@ -88,10 +92,13 @@
         height: 100vh;
     background-size: cover;
 }
+
+
+      
 </style>
 </head>
 <body>
-	<div id="root">
+	
 		<div class="containerN">
 			<div class="headerN">
 			
@@ -117,7 +124,7 @@
 					<div class="icon">❤</div>
 				</div>
 				</a>
-			</div>
+			
 		</div>
 	</div>
 </body>
