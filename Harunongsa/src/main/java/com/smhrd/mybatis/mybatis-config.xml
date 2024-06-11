@@ -9,7 +9,7 @@
 	<!-- TypeAlias 설정 -->
 	<typeAliases>
 		<typeAlias type="com.smhrd.model.MemDTO" alias="MemDTO"/>
-		<typeAlias type="com.smhrd.model.DiaryDTO" alias="DiaryDTO"/>		
+		
 	</typeAliases>
 
   <environments default="development">
@@ -26,6 +26,6 @@
   <!-- mapper 파일 등록 -->
   <mappers>
     <mapper resource="com/smhrd/mapper/Mapper.xml"/>
-    <mapper resource="com/smhrd/mapper/DiaryMapper.xml"/>
+ 
   </mappers>
 </configuration>
