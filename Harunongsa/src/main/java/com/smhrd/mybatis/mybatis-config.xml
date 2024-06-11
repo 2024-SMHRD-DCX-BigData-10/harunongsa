@@ -9,9 +9,10 @@
 	<!-- TypeAlias 설정 -->
 	<typeAliases>
 		<typeAlias type="com.smhrd.model.MemDTO" alias="MemDTO"/>
-		
+		<typeAlias type="com.smhrd.model.DiaryDTO" alias="DiaryDTO"/>
+		<typeAlias type="com.smhrd.model.GardenDTO" alias="GardenDTO"/>
+		<typeAlias type="com.smhrd.model.GrowthDTO" alias="GrowthDTO"/>
 	</typeAliases>
-
   <environments default="development">
     <environment id="development">
       <transactionManager type="JDBC"/>
