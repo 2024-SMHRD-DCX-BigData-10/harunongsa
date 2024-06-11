@@ -63,7 +63,8 @@ public class GardenCon extends HttpServlet {
 		} else {
 			System.out.println("게시글 작성 실패");
 		}
-
+		
+		response.sendRedirect("EcoCertificationBoard.jsp");
 	}
 
 }

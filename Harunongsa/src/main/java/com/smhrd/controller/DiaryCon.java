@@ -61,6 +61,8 @@ public class DiaryCon extends HttpServlet {
 			System.out.println("게시글 작성 실패");
 		}
 		
+		response.sendRedirect("GrowPost.jsp");
+		
 	}
 
 }

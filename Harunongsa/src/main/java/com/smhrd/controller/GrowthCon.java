@@ -52,6 +52,8 @@ public class GrowthCon extends HttpServlet {
 		GrowthDTO dto = new GrowthDTO(growthpostid, title, content, image, seedname, memberid);
 
 		int row = new GrowthDAO().writeGrowth(dto);
+		
+		response.sendRedirect("EcoGrowBoard.jsp");
 
 		if (row > 0) {
 			System.out.println("게시글 작성 성공");
