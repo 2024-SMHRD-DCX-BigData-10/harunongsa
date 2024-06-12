@@ -144,7 +144,7 @@ resize: none;
 
                     <h1>일지 작성하기</h1>
 
-                    <form class="Grow-form">
+                    <form class="Grow-form" action="DiaryCon" method="post" enctype="multipart/form-data">
 
                         <label for="image">사진1</label>
                         <input type="file" name="diaryimg1" style="float: right;">
@@ -167,7 +167,7 @@ resize: none;
 
                         <div class="button-container">
     <a href="GrowPostManage.jsp" class="button-link">뒤로가기</a>
-    <a href="GrowPostManage.jsp" class="button-link">제출하기</a>
+    <button type="submit" class="button-link">제출하기</button>
 </div>
 
                     </form>

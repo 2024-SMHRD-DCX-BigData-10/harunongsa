@@ -1,3 +1,10 @@
+<%@ page import="org.apache.ibatis.reflection.SystemMetaObject"%>
+<%@ page import = "java.util.List" %>
+<%@ page import = "com.smhrd.model.DiaryDTO" %>
+<%@ page import = "com.smhrd.model.DiaryDAO" %>
+<%@ page import = "java.util.ArrayList" %>
+<%@ page import="java.text.SimpleDateFormat"%>
+<%@ page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -151,6 +158,11 @@
   
 </head>
 <body>
+	<!-- 일지 게시판 목록 조회 기능 -->
+	<%
+		List<DiaryDTO> Diaries = new DiaryDAO().allDiary();
+		System.out.print(Diaries.size());
+	%>
     <div id="root">
         <div class="container">
             
@@ -165,11 +177,11 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>순번</th>
-                    <th>작물이름</th>
-                    <th>작성연도</th>
-                    <th>수정</th>
-                    <th>삭제</th>
+                    		<th>순번</th>
+                    		<th>제목</th>
+                    		<th>작성일자</th>
+                    		<th>수정</th>
+                    		<th>삭제</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -182,6 +194,15 @@
                     <td><button class="delete-btn">삭제</button></td>
                         </tr>
                         <!-- 추가 데이터는 여기에 -->
+                        <% for(DiaryDTO d: Diaries){ %>
+                        	<tr>
+                        		<td> <%= d.getDiaryidx() %></td>
+                        		<td> <%= d.getDiarytitle() %></td>
+                        		<td> <%= d.getCreatedat() %></td>
+                        		<td><button class="edit-btn">수정</button></td>
+                    			<td><button class="delete-btn">삭제</button></td>
+                        	</tr>
+                        <%} %>
                     </tbody>
                 </table>
                 

@@ -1,5 +1,7 @@
 package com.smhrd.model;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
@@ -18,5 +20,16 @@ public class DiaryDAO {
 		
 		session.close();
 		return row;
+		
+	// 일지 게시판 조회 기능 추가
+		
+	}
+	
+	public List<DiaryDTO> allDiary(){
+		List<DiaryDTO> Diaries = null;
+		SqlSession session = sqlSessionFactory.openSession(true);
+		Diaries = session.selectList("allDiary");
+		session.close();
+		return Diaries;
 	}
 }

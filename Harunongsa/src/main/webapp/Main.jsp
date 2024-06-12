@@ -1,3 +1,10 @@
+<%@ page import = "org.apache.ibatis.reflection.SystemMetaObject"%>
+<%@ page import = "java.util.List" %>
+<%@ page import = "com.smhrd.model.CropDTO" %>
+<%@ page import = "com.smhrd.model.CropDAO" %>
+<%@ page import = "java.util.ArrayList" %>
+<%@ page import="java.text.SimpleDateFormat"%>
+<%@ page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -132,14 +139,16 @@ body{
     </style>
 </head>
 <body>
-	<div id="root">
-		<div class="containerM">
-			<div class="headerM">
-			<a href="MyPage.jsp" style="hidden;text-decoration:none;color:black;">
-<div class="menu">☰</div>
-</a>
-			
-				
+		<!-- 작물 정보 DB 리스트 가져오기 -->
+		<%
+			List<CropDTO> allCrop = new CropDAO().allCrop();
+		%>
+		<div id="root">
+			<div class="containerM">
+				<div class="headerM">
+				<a href="MyPage.jsp" style="hidden;text-decoration:none;color:black;">
+					<div class="menu">☰</div>
+				</a>
 				<h1>하루농사</h1>
 				<a href="Notify.jsp" style="text-decoration: none;">
 					<div class="icon">🔔</div>
@@ -150,37 +159,15 @@ body{
 					베란다에서 무엇을 키울 수 있을까요?
 					</h2>
 					<div class="InfosM">
-						<div class="crop">
-							<img
-								src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-								alt="Tomato">
-							<p>tomato</p>
+			
+					<div class="crop">
+							<% for(CropDTO c: allCrop){ %>
+								<img
+								src="<%= c.getImage() %>"
+								alt="<%= c.getCropname() %>">
+							<p><%=c.getCropname() %></p>
+							<%} %>
 						</div>
-						<div class="crop">
-							<img
-								src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-								alt="Potato">
-							<p>tomato</p>
-						</div>
-						<div class="crop">
-							<img
-								src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-								alt="Corn">
-							<p>tomato</p>
-						</div>
-						<div class="crop">
-							<img
-								src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-								alt="Bean">
-							<p>tomato</p>
-						</div>
-						<div class="crop">
-							<img
-								src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-								alt="Bean">
-							<p>tomato</p>
-						</div>
-
 					</div>
 					<a href="./InfoDetail.jsp"
 						style="text-decoration: none; color: black;">

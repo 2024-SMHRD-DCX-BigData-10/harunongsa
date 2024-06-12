@@ -9,6 +9,11 @@
 		insert into diaries values(#{diaryidx}, #{memberid}, #{cropidx}, #{diarytitle}, #{diarycontent}, #{diaryimg1}, #{diaryimg2}, sysdate)
 	</insert>
 	
+	<select id="allDiary" resultType="GardenDTO">
+		select diaryidx, memberid, cropidx, diarytitle, diarycontent, diaryimg1, diaryimg2
+		from diaries
+	</select>
+	
 	 <insert id="garden" parameterType="GardenDTO">
         insert into certigarden values (#{certidx}, #{title}, #{content}, #{img}, #{issecret}, #{desiredseed}, #{recipientname}, #{deliaddr}, #{recipientphone}, #{memberid}, sysdate)
     </insert>

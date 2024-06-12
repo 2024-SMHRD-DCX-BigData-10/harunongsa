@@ -93,7 +93,7 @@ body {
 					src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 					alt="Profile Picture">
 			</div>
-			<div class="welcome-message">닉네임님 환영합니다!</div>
+			<div class="welcome-message"><%= session.getAttribute("name") %>님 환영합니다!</div>
 		</div>
 		<div class="menu">
 

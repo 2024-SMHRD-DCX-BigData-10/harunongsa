@@ -1,4 +1,4 @@
-<%@page import="org.apache.ibatis.reflection.SystemMetaObject"%>
+<%@ page import="org.apache.ibatis.reflection.SystemMetaObject"%>
 <%@ page import = "java.util.List" %>
 <%@ page import = "com.smhrd.model.GardenDTO" %>
 <%@ page import = "com.smhrd.model.GardenDAO" %>
@@ -149,13 +149,6 @@
                       
                     </thead>
                     <tbody>
-                        <!-- 예시 데이터 -->
-                        <tr>
-                            <td>1</td>
-                            <td>예시 제목</td>
-                            <td>홍길동</td>
-                            <td>10:00</td>
-                        </tr>
                         <!-- 추가 데이터는 여기에 -->
                          <% for(GardenDTO g: Certigarden){ %>
                     	   <tr>

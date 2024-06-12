@@ -25,6 +25,7 @@ public class DeleteCon extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		session.removeAttribute("name");
+		session.removeAttribute("memberID");
 		
 		String memberID = request.getParameter("memberID");
 		String password = request.getParameter("password");
