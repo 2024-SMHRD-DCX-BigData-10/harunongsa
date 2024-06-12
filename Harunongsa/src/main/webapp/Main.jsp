@@ -55,7 +55,7 @@
 
 .InfosM {
     display: flex;
-    overflow-x: scroll; /* 변경된 부분 */
+    /*overflow-x: scroll; /* 변경된 부분 */
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid #e0e0e0;
@@ -152,7 +152,7 @@ body {
 
 .crops-container {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 </style>
 </head>
