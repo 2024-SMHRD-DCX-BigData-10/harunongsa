@@ -23,15 +23,11 @@
 .containerM {
     width: 100%;
     max-width: 422px;
-    margin: auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   
-    overflow: hidden;
-    height: 100vh;
-    max-width: 420px;
-    margin: 0 auto;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .headerM {
     display: flex;
@@ -50,6 +46,9 @@
 }
 .contentM {
     padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -94,19 +93,14 @@
 
 body{
     background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    /* 컨테이너 상하 정렬 */
-    justify-content: center;
-    /* 컨테이너 좌우 정렬 */
-    align-items: center;
-    /* height: 100vh; */
-    /* 웹브라우저 높잇값을 기준으로 영역의 크기가 정해짐 */
-    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-        height: 100vh;
     background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
 }
 
 .icon-containerF {
@@ -169,15 +163,15 @@ body{
 							<%} %>
 						</div>
 					</div>
-					<a href="./InfoDetail.jsp"
+					<a href="./InfoDetail.jsp?cropname=<%= allCrop.get(8).getCropname() %>&image=<%= allCrop.get(8).getImage() %>&cropidx=<%= allCrop.get(8).getCropidx() %>"
 						style="text-decoration: none; color: black;">
 						<div class="recommended">
 							<h2>
-								이달의 추천 농작물<br>토마토
+								이달의 추천 농작물<br><%= allCrop.get(8).getCropname() %>
 							</h2>
 							<img
-								src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-								alt="Bean sprouts">
+								src="<%= allCrop.get(8).getImage() %>"
+								alt="<%= allCrop.get(8).getCropidx() %>">
 							<p class="tags">#쑥쑥 #금방</p>
 						</div>
 					</a>

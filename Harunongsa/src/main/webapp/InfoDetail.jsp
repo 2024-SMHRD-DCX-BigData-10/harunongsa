@@ -21,32 +21,34 @@
 
 body {
     background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-attachment: fixed; /* 고정된 배경 이미지 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; /* stretch로 변경하여 내부 요소가 전체 높이를 차지하도록 함 */
+    overflow-y: auto; /* 스크롤 가능하도록 변경 */
+    height: 100vh; /* 뷰포트 높이 설정 */
     margin: 0;
     padding: 0;
-    display: flex;
-    /* 컨테이너 상하 정렬 */
-    justify-content: center;
-    /* 컨테이너 좌우 정렬 */
-    align-items: center;
-    /* height: 100vh; */
-    /* 웹브라우저 높잇값을 기준으로 영역의 크기가 정해짐 */
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-        height: 100vh;
-    background-size: cover;
 }
 
-
+		#root {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px; /* 상단 패딩 추가 */
+        }
+        
         .card {
             background: #fff;
-           
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             overflow: hidden;
-         
-            height: 100vh;
+            height: auto; /* 높이 자동 조정 */
             max-width: 420px;
-    margin: 0 auto;
-    padding: 0;
+   			margin: 20px; /* 간격 추가 */
+    		padding: 0;
         }
 
         .crops-image {
@@ -105,12 +107,19 @@ body {
 </head>
 
 <body>
+	<!-- Main.jsp에서 넘겨준 쿼리스트링 데이터 받기 --> 
+	
+	<%
+		String cropname = request.getParameter("cropname");
+		String image = request.getParameter("image");
+		String cropidx = request.getParameter("cropidx");
+	%>
     <div id="root">
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Tomatoes" class="crops-image">
+            <img src="<%= image %>"
+                alt="<%= cropidx %>" class="crops-image">
             <div class="content">
-                <h1>토마토</h1>
+                <h1><%= cropname %></h1>
                 <div class="checkboxes">
                     <label><input type="checkbox" checked> 마음에 드는 작물 찜하기</label>
                     <label><input type="checkbox" checked> 키우기 시작하기</label>
