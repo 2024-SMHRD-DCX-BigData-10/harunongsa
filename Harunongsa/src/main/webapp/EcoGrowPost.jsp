@@ -144,23 +144,30 @@ resize: none;
 
 					<h1>성장글 작성하기</h1>
 
-					<form class="Grow-form">
+					<form class="Grow-form" action="GrowthCon" method="post" enctype="multipart/form-data">
 
 						<label for="image">사진</label> <input type="file" name="image"
 							style="float: right;"> <label for="PostName">글제목</label>
+						
 						<input type="text" id="PostName" name="title"
-							placeholder="글제목을 입력하세요"> <label for="content">글내용</label>
+							placeholder="글제목을 입력하세요"> 
+						<label for="content">글내용</label>
+						
 						<input type="text" id="content" name="content"
-							placeholder="글내용을 입력하세요"> <label for="seedname">농작물
-							이름</label> <input type="text" id="seedname" name="seedname"
-							placeholder="농작물 이름을 입력하세요"> <label for="memberid">작성자
-							이름</label> <input type="text" id="name" name="memberid"
+							placeholder="글내용을 입력하세요"> 
+						<label for="seedname">농작물 이름</label> 
+						
+						<input type="text" id="seedname" name="seedname"
+							placeholder="농작물 이름을 입력하세요"> 
+						<label for="memberid">작성자 이름</label> 
+							
+						<input type="text" id="name" name="memberid"
 							placeholder="이름을 입력하세요">
 
 
 						 <div class="button-container">
     <a href="EcoGrowBoard.jsp" class="button-link">뒤로가기</a>
-    <a href="EcoGrowBoard.jsp" class="button-link">제출하기</a>
+   <button type="submit" class="button-link">제출하기</button>
 </div>
 
 

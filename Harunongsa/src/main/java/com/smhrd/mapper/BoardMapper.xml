@@ -19,6 +19,11 @@
 	</select>
 
 	<insert id="growth" parameterType = "GrowthDTO">
-		insert into growthpost values(#{growthpostid}, #{title}, #{content}, #{image}, #{seedname}, #{memberid}, #{timestamp})
+		insert into growthpost values(#{growthpostid}, #{title}, #{content}, #{image}, #{seedname}, #{memberid}, sysdate)
 	</insert>
+	
+	<select id="allGrowth" resultType="GrowthDTO">
+		select growthpostid, title, content, image, seedname, memberid, timestamp
+		from growthpost	
+	</select>
 </mapper>

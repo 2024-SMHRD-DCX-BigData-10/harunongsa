@@ -23,5 +23,5 @@ public class GrowthDTO {
 	@NonNull private String image;
 	@NonNull private String seedname;
 	@NonNull private String memberid;
-	private Date date;
+	private Date timestamp;
 }

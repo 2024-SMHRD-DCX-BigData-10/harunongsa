@@ -146,23 +146,7 @@
                             <th>작성자</th>
                             <th>시간</th>
                         </tr>
-                       <% for(GardenDTO g: Certigarden){ %>
-                    	   <tr>
-                    	   		<td><%= g.getCertidx() %></td>
-                    	   		<td><%= g.getTitle() %></td>
-                    	   		<td><%= g.getMemberid() %></td>
-                    	   		<td><%= g.getCreatedat() %></td>
-                    	   </tr>
-                    	   
-                       <%}%>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                      
                     </thead>
                     <tbody>
                         <!-- 예시 데이터 -->
@@ -173,6 +157,14 @@
                             <td>10:00</td>
                         </tr>
                         <!-- 추가 데이터는 여기에 -->
+                         <% for(GardenDTO g: Certigarden){ %>
+                    	   <tr>
+                    	   		<td><%= g.getCertidx() %></td>
+                    	   		<td><%= g.getTitle() %></td>
+                    	   		<td><%= g.getMemberid() %></td>
+                    	   		<td><%= g.getCreatedat() %></td>
+                    	   </tr>   
+                       <%}%>
                     </tbody>
                 </table>
                 

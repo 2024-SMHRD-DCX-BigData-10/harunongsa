@@ -1,5 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import = "org.apache.ibatis.reflection.SystemMetaObject"%>
+<%@ page import = "java.util.List" %>
+<%@ page import = "com.smhrd.model.GrowthDTO" %>
+<%@ page import = "com.smhrd.model.GrowthDAO" %>
+<%@ page import = "java.util.ArrayList" %>
+<%@ page import="java.text.SimpleDateFormat"%>
+<%@ page import="java.util.Date"%>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -112,7 +119,11 @@ tbody tr:nth-child(even) {
 </head>
 
 <body>
-
+	<!-- 성장 게시판 목록 조회 기능 -->
+	<%
+		List<GrowthDTO> Growthpost = new GrowthDAO().allGrowth();
+		System.out.print(Growthpost.size());
+	%>
 	<div class="container">
 
 		<div class="header">
@@ -141,6 +152,13 @@ tbody tr:nth-child(even) {
 						<td>10:00</td>
 					</tr>
 					<!-- 추가 데이터는 여기에 -->
+					<% for(GrowthDTO g: Growthpost){ %>
+					<tr>
+						<td><%= g.getGrowthpostid() %></td>
+						<td><%= g.getTitle() %></td>
+						<td><%= g.getMemberid() %></td>	
+						<td><%= g.getTimestamp() %></td>				
+					<%} %>
 				</tbody>
 			</table>
 
