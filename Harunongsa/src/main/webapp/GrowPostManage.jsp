@@ -19,47 +19,47 @@
         }
 
         body {
-            background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            height: 100vh;
-            background-size: cover;
-        }
+			background-image:
+				url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+			min-height: 100vh;
+			background-size: cover;
+			
+		}
+
         .container {
-            width: 100%;
-            width: 420px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            height: 100vh;
-            max-width: 420px;
-            margin: 0 auto;
-            padding: 0px;
+			width: 100%;
+			max-width: 422px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			/* border-radius: 10px; */
+			overflow-y: visible;
+			/* 추가된 부분 */
+			max-width: 420px;
+			margin: 0 auto;
+			padding: 0;
+			height: 880px;
+		}
 
-        }
 
-        
         .wrapper {
-           
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            background-color: #ffffff;
-            border: 5px solid #ffffff;
-            flex-direction: column;
-            height: 100vh;
-
-            background-color: #FCFCFC;
-            
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			background-color: #ffffff;
+			border: 5px solid #ffffff;
+			flex-direction: column;
+			height: auto;
+			background-color: #FCFCFC;
+			overflow-y: visible;
          
-            
-         
-        }
+		}
 
 
         table {
@@ -67,7 +67,7 @@
             border-collapse: collapse;
             margin-bottom: 20px;
             padding: 20px;
-            
+
 
         }
 
@@ -80,7 +80,11 @@
             padding: 10px;
             border: 1px solid #ddd;
             text-align: center;
-            font-size: small;
+
+        }
+
+        table {
+            font-size: 12px;
         }
 
         tbody tr:nth-child(even) {
@@ -94,7 +98,7 @@
             border-radius: 5px;
             padding: 10px 20px;
             cursor: pointer;
-            font-size: 14px;
+            font-size: 12px;
             margin-bottom: 20px;
             transition: background-color 0.3s ease;
         }
@@ -104,9 +108,10 @@
         }
 
 
-        
+
 
         .header {
+            width: 420px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -116,12 +121,13 @@
         }
 
         .header h1 {
-            font-size: 1.2em;
+            font-size: 20px;
             margin: 0;
         }
 
-        .header .icon {
-            font-size: 1.5em;
+        .header .icon,
+        .menu {
+            font-size: 20px;
         }
 
         .content {

@@ -8,36 +8,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원 삭제</title>
    <style>
-*{box-sizing: border-box;}
+        * {
+            box-sizing: border-box;
+        }
 
-        body{
+        body {
             background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            min-height: 100vh; /* 변경됨 */
             background-size: cover;
-            overflow-y: auto; /* 추가됨 */
+            min-height: 100vh;
+            /* 변경됨 */
+            overflow-y: visible;
+            /* 추가됨 */
         }
 
         .container {
-            
+
             display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 420px;
-    /* margin: 20px; 변경됨 */
-    padding: 20px; /* 변경됨 */
-    width: 100%;
-            
-        } 
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 420px;
+            padding: 20px;
+            width: 100%;
+            height: 880px;
+
+        }
 
         .wrapper {
             align-items: center;
@@ -47,7 +51,8 @@
             border: 5px solid #ffffff;
             flex-direction: column;
             background-color: #ffffff;
-            height: 100vh;
+          height: auto;
+            overflow-y: visible;
         }
 
         .content {
@@ -55,21 +60,21 @@
             background-color: white;
         }
 
-        
+
 
         .logout-confirmation {
-            background-color:  #BEDC52;
+            background-color: #BEDC52;
             color: white;
             padding: 20px;
             border-radius: 20px;
             margin: 20px 0;
-       
+
 
         }
 
         .logout-confirmation p {
             margin: 0;
-            font-size: 16px;
+            font-size: 15px;
         }
 
         .buttons {
@@ -82,7 +87,7 @@
             background-color: transparent;
             border: none;
             color: white;
-            font-size: 16px;
+            font-size: 15px;
             cursor: pointer;
         }
     </style>

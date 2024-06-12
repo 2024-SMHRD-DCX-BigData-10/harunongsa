@@ -13,123 +13,147 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>메인 페이지</title>
-    <style>
-* {
-    box-sizing: border-box;
-}
+      <style>
+        * {
+            box-sizing: border-box;
+        }
 
 
 
-.containerM {
-    width: 100%;
-    max-width: 422px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-.headerM {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
-}
-.headerM h1 {
-    font-size: 1.2em;
-    margin: 0;
-}
-.headerM .icon {
-    font-size: 1.5em;
-}
-.contentM {
-    padding: 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
+        .containerM {
+            width: 100%;
+            max-width: 422px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            overflow-y: visible;
+            height: 880px; 
+
+            max-width: 420px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .headerM {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .headerM h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .headerM .icon {
+            font-size: 20px;
+        }
+
+        .contentM {
+            padding: 20px;
+        }
 
 
-.InfosM {
-    display: flex;
-    overflow-x: hidden;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #e0e0e0;
-}
-.crop {
-    flex: 0 0 auto;
-    margin-right: 10px;
-    text-align: center;
-}
-.crop img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.crop p {
-    font-size: 0.8em;
-    margin: 5px 0 0;
-}
-.recommended, .raise-child {
-    margin-bottom: 20px;
-}
-.recommended h2, .raise-child h2 {
-    font-size: 1em;
-    margin-bottom: 10px;
-}
-.recommended img, .raise-child img {
-    width: 100%;
-    border-radius: 10px;
-}
-.tags {
-    font-size: 0.8em;
-    color: #888;
-}
+        .InfosM {
+            display: flex;
+            overflow-y: visible;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .crop {
+            flex: 0 0 auto;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        .crop img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .crop p {
+            font-size: 15px;
+            margin: 5px 0 0;
+        }
+
+        .recommended,
+        .raise-child {
+            margin-bottom: 20px;
+        }
+
+        .recommended h2,
+        .raise-child h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .recommended img,
+        .raise-child img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .tags {
+            font-size: 18px;
+            color: #888;
+        }
 
 
-body{
-    background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-color: #f0f0f0;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: auto;
-}
+        body {
+            background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* 컨테이너 상하 정렬 */
+            justify-content: center;
+            /* 컨테이너 좌우 정렬 */
+            align-items: flex-start;
+            /* height: 100vh; */
+            /* 웹브라우저 높잇값을 기준으로 영역의 크기가 정해짐 */
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            min-height: 100vh;
+            background-size: cover;
+        }
 
-.icon-containerF {
-    display: flex;
-    justify-content: space-between; /* 아이콘들 사이의 간격을 균등하게 조정 */
-    background-color: white;
-    align-items: center;
-    padding: 10px;
-    width: 380px; /* 너비를 420px로 설정 */
-}
+        .icon-containerF {
+            display: flex;
+            justify-content: space-between;
+            /* 아이콘들 사이의 간격을 균등하게 조정 */
+            background-color: white;
+            align-items: center;
+            padding: 10px;
+            width: 370px;
+            /* 너비를 420px로 설정 */
+        }
 
-.icon {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    transition: transform 0.2s;
-    font-size: 17px; /* 아이콘의 폰트 크기를 50px로 설정 */
-}
+        .icon,
+        .menu {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            font-size: 20px;
+            /* 아이콘의 폰트 크기를 50px로 설정 */
+        }
 
-.icon:hover {
-    transform: scale(1.1);
-}
+        .icon:hover {
+            transform: scale(1.1);
+        }
 
-#wrapperF{
-  height: auto;
-  min-height: 100%;
-  padding-bottom: (footer높이);
-}
-
+        #wrapperF {
+            height: auto;
+            min-height: 100%;
+            padding-bottom: (footer높이);
+        }
     </style>
 </head>
 <body>

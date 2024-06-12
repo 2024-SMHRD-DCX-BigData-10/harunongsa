@@ -7,56 +7,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>일지 작성</title>
-    <style>
-          *{box-sizing: border-box;}
-          
-        body{
-            background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            height: 100vh;
-            background-size: cover;
+   <style>
+        * {
+            box-sizing: border-box;
         }
 
-        .container {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 100vh;
-            text-align: center;
+        body {
+			background-image:
+				url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+			min-height: 100vh;
+			/* 변경됨 */
+			background-size: cover;
+			overflow-y: visible;
+		}
 
+			.container {
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				background-position: 50%;
+				background-repeat: no-repeat;
+				background-size: contain;
+				height: 900px
+				/* 변경됨 */
+				text-align: center;
+				max-width: 420px;
+				margin: 0 auto;
+				padding: 0;
+				
+			}
 
-            max-width: 420px;
-    margin: 0 auto;
-    padding: 0;
+			.wrapper {
+				align-items: center;
+				display: flex;
+				justify-content: flex-start;
+				background-color: #ffffff;
+				border: 5px solid #ffffff;
+				flex-direction: column;
+				height: 880px;
+				/* 변경됨 */
+				background-color: #FCFCFC;
+				width: 420px;
+				overflow-y: visible;
+				
+			}
 
-        }
-
-        .wrapper {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            background-color: #ffffff;
-            border: 5px solid #ffffff;
-            flex-direction: column;
-            height: 100vh;
-            
-            background-color: #FCFCFC;
-            width: 420px;
-        }
-
-        .content {
-            text-align: center;
-        }
-
+			.content {
+				text-align: center;
+				
+			}
 
 
         .image-container {
@@ -71,7 +77,7 @@
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 20px;
             color: #333;
             margin-bottom: 20px;
         }
@@ -83,7 +89,7 @@
         }
 
         .Grow-form label {
-            font-size: 14px;
+            font-size: 15px;
             margin-bottom: 5px;
             color: #555;
         }
@@ -95,14 +101,14 @@
             margin-bottom: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            font-size: 14px;
+            font-size: 15px;
             box-sizing: border-box;
         }
 
         .Grow-form .inline-label {
             display: inline;
             margin-left: 5px;
-            font-size: 14px;
+            font-size: 15px;
             color: #555;
         }
 
@@ -113,14 +119,14 @@
 
         .Grow-form a {
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 15px;
             background-color: #BEDC52;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-           	text-decoration:none;
+            text-decoration: none;
         }
 
         .Grow-form a:hover {
@@ -129,8 +135,8 @@
 
         textarea {
 
-resize: none;
-}
+            resize: none;
+        }
     </style>
 </head>
 
