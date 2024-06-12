@@ -25,7 +25,7 @@
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	overflow-y: visible;
-	height: 880px;
+	height: auto;
 	max-width: 420px;
 	margin: 0 auto;
 	padding: 0;
@@ -149,6 +149,11 @@ body {
 	min-height: 100%;
 	padding-bottom: (footer높이);
 }
+
+.crops-container {
+    display: flex;
+    overflow-x: auto;
+}
 </style>
 </head>
 <body>
@@ -172,7 +177,7 @@ body {
 					베란다에서 무엇을 키울 수 있을까요?
 					</h2>
 				<div class="InfosM">
-   <div class="crops-container">
+   <div class="crops-container" id="crops-container">
       <% for(CropDTO c: allCrop){ %>
          <div class="crop">
             <img src="<%= c.getImage() %>" alt="<%= c.getCropname() %>">
@@ -220,4 +225,22 @@ body {
 			</div>
 		</div>
 </body>
+<script>
+window.onload = function() {
+    const container = document.getElementById('crops-container');
+    let scrollAmount = 0;
+    const scrollMax = container.scrollWidth - container.clientWidth;
+
+    function autoScroll() {
+        scrollAmount += 1;
+        if (scrollAmount > scrollMax) {
+            scrollAmount = 0;
+        }
+        container.scrollLeft = scrollAmount;
+        console.log("Scrolling:", scrollAmount); // 로그 추가
+    }
+
+    setInterval(autoScroll, 20);
+}
+</script>
 </html>
