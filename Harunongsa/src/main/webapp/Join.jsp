@@ -7,8 +7,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>회원 가입</title>
-<style>
-   * {
+ <style>
+        * {
             box-sizing: border-box;
         }
 
@@ -25,43 +25,45 @@
             /* 컨테이너 상하 정렬 */
             justify-content: center;
             /* 컨테이너 좌우 정렬 */
-            align-items: center;
+            align-items: flex-start;
             /* height: 100vh; */
             /* 웹브라우저 높잇값을 기준으로 영역의 크기가 정해짐 */
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-                height: 100vh;
-    background-size: cover;
+            min-height: 100vh;
+            background-size: cover;
         }
 
         .container {
-            align-items: center;
+            align-items: flex-start;
             display: flex;
             justify-content: center;
-            background-position: 50%;
-            background-repeat: no-repeat;
             background-size: contain;
-            height: 100vh;
+            height: 880px;
             text-align: center;
             max-width: 420px;
-    margin: 0 auto;
-    padding: 0;
+            margin: 0 auto;
+            padding: 0;
+            font-size: 15px;
         }
 
         .wrapper {
             align-items: center;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             background-color: #ffffff;
             border: 5px solid #ffffff;
             flex-direction: column;
-            height: 100vh;
-          width: 420px;
+            /* height: auto; */
+            height: 880px;
+            width: 420px;
             background-color: #FCFCFC;
+
         }
 
         .content {
             text-align: center;
+
         }
 
         .input {
@@ -73,12 +75,13 @@
             width: 300px;
             /* text-align: center; */
             padding: 20px;
+            font-size: 13px;
         }
 
         .btn1 {
             margin-top: 25px;
             background-color: #BEDC52;
-            border-radius: 25px ;
+            border-radius: 25px;
             border: 0px solid #ffffff;
             color: #fff;
             height: 30px;
@@ -95,9 +98,7 @@
             width: 200px;
 
         }
-        
-
-</style>
+    </style>
 </head>
 <body>
 

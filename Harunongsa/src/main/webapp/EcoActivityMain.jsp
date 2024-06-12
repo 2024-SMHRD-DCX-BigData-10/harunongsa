@@ -7,53 +7,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>친환경 활동 메인 페이지</title>
-       <style>
-        *{box-sizing: border-box;}
-        
-        body{
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
             background-image: url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            height: 100vh;
             background-size: cover;
+            min-height: 100vh;
+            /* 변경됨 */
+            overflow-y: visible;
+            /* 추가된 부분 */
+            /* 변경됨 */
+          
         }
 
         .container {
             align-items: center;
             display: flex;
             justify-content: center;
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 100vh;
+            width: 100%;
             text-align: center;
             max-width: 420px;
-    margin: 0 auto;
-    padding: 0;
-           
-          
+            height: 880px;
+            overflow-y: visible;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
         }
 
         .wrapper {
-            align-items: center;
+            align-items: flex-start;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             background-color: #ffffff;
             border: 5px solid #ffffff;
             flex-direction: column;
-            height: 100vh;
-           
-           
+            height: auto;
+            overflow-y: visible;
+            /* 추가된 부분 */
+            width: 100%;
+            /* 추가됨 */
+            max-width: 420px;
+            /* 추가됨 */
             background-color: #ffffff;
+            height: 880px
         }
 
         .content {
             text-align: center;
+            
         }
 
 
@@ -86,20 +96,20 @@
         }
 
         .action-button {
-            background-color:#BEDC52;
+            background-color: #BEDC52;
             color: white;
             border: none;
             border-radius: 20px;
             padding: 15px 30px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 15px;
             transition: background-color 0.3s ease;
             width: 185px;
 
         }
 
         .action-button:hover {
-            background-color:#aac059;
+            background-color: #aac059;
         }
     </style>
 </head>

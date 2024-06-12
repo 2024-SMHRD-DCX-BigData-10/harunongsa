@@ -6,10 +6,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>로그인</title>
-
 <style>
-   
-   * {
+        * {
             box-sizing: border-box;
         }
 
@@ -26,15 +24,15 @@
             /* 컨테이너 상하 정렬 */
             justify-content: center;
             /* 컨테이너 좌우 정렬 */
-            align-items: center;
+            align-items: flex-start;
             /* height: 100vh; */
             /* 웹브라우저 높잇값을 기준으로 영역의 크기가 정해짐 */
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-                height: 100vh;
-    background-size: cover;
+            min-height: 100vh;
+            background-size: cover;
 
-    
+
         }
 
         .container {
@@ -44,12 +42,14 @@
             background-position: 50%;
             background-repeat: no-repeat;
             background-size: contain;
-            height: 100vh;
+            height: 880px; 
+
             text-align: center;
 
             max-width: 420px;
-    margin: 0 auto;
-    padding: 0;
+            margin: 0 auto;
+            padding: 0;
+
 
         }
 
@@ -57,12 +57,12 @@
             width: 420px;
             align-items: center;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             background-color: #ffffff;
             border: 5px solid #ffffff;
             flex-direction: column;
-            height: 100vh;
-           
+            height: 880px; 
+
             background-color: #FCFCFC;
         }
 
@@ -84,27 +84,36 @@
         .btn1 {
             margin-top: 25px;
             background-color: #BEDC52;
-            border-radius: 25px ;
+            border-radius: 7px;
             border: 0px solid #ffffff;
             color: #fff;
-            height: 30px;
-            width: 200px;
+            height: 45px;
+            width: 183px;
+            margin-bottom: 3px;
+            font-size: 13px;
         }
 
         .btn {
             margin-top: 7px;
             background-color: #BEDC52;
-            border-radius: 25px;
+            border-radius: 8px;
             border: 0px solid #ffffff;
             color: #fff;
-            height: 30px;
-            width: 200px;
+            height: 45px;
+            width: 183px;
+            margin-bottom: 7px;
+            font-size: 13px;
 
         }
-        
 
-  
-</style>
+        h1 {
+            font-size: 30px;
+        }
+
+        .input {
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
     <div id="root">
