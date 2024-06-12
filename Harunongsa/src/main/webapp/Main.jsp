@@ -180,14 +180,17 @@ body {
    <div class="crops-container" id="crops-container">
       <% for(CropDTO c: allCrop){ %>
          <div class="crop">
+         <!-- a 태그를 추가하여 이미지를 클릭하면 쿼리스트링을 통해 정보를 전송 -->
+         <a href="./InfoDetail.jsp?cropname=<%= c.getCropname() %>&image=<%= c.getImage() %>&cropidx=<%= c.getCropidx() %>" 
+            style="text-decoration: none; color: black;">
             <img src="<%= c.getImage() %>" alt="<%= c.getCropname() %>">
-            <p><%=c.getCropname() %></p>
+            <p><%= c.getCropname() %></p>
+         </a>
          </div>
       <% } %>
    </div>
 </div>
-					<a
-						href="./InfoDetail.jsp?cropname=<%= allCrop.get(8).getCropname() %>&image=<%= allCrop.get(8).getImage() %>&cropidx=<%= allCrop.get(8).getCropidx() %>"
+					<a href="./InfoDetail.jsp?cropname=<%= allCrop.get(8).getCropname() %>&image=<%= allCrop.get(8).getImage() %>&cropidx=<%= allCrop.get(8).getCropidx() %>"
 						style="text-decoration: none; color: black;">
 						<div class="recommended">
 							<h2>
