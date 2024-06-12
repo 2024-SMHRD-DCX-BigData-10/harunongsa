@@ -30,7 +30,7 @@ public class DiaryCon extends HttpServlet {
 
         // 파일 업로드를 하기 위한 변수 설정
         // 파일을 저장할 경로(String)
-        String savePath = request.getServletContext().getRealPath("file");
+        String savePath = request.getServletContext().getRealPath("File");
         System.out.println("savePath : " + savePath);
 
         // savePath가 null인지 확인하고 예외 처리
@@ -104,6 +104,6 @@ public class DiaryCon extends HttpServlet {
         }
 
         // 게시글 작성 후 게시판 페이지로 리다이렉트합니다.
-        response.sendRedirect("DiaryPost.jsp");
+        response.sendRedirect("GrowPostManage.jsp");
     }
 }

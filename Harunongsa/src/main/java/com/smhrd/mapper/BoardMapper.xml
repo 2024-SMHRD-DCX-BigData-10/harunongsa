@@ -9,8 +9,8 @@
 		insert into diaries values(#{diaryidx}, #{memberid}, #{cropidx}, #{diarytitle}, #{diarycontent}, #{diaryimg1}, #{diaryimg2}, sysdate)
 	</insert>
 	
-	<select id="allDiary" resultType="GardenDTO">
-		select diaryidx, memberid, cropidx, diarytitle, diarycontent, diaryimg1, diaryimg2
+	<select id="allDiary" resultType="DiaryDTO">
+		select diaryidx, memberid, cropidx, diarytitle, diarycontent, diaryimg1, diaryimg2, createdat
 		from diaries
 	</select>
 	
