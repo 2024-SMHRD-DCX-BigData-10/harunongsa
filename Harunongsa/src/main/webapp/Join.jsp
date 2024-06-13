@@ -99,6 +99,16 @@
 
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let today = new Date();
+            let year = today.getFullYear();
+            let month = ('0' + (today.getMonth() + 1)).slice(-2);
+            let day = ('0' + today.getDate()).slice(-2);
+            let formattedDate = year + '-' + month + '-' + day;
+            document.getElementById('joinedAt').value = formattedDate;
+        });
+    </script>
 </head>
 <body>
 
@@ -127,9 +137,8 @@
 						class="input" name="preference" type="text"
 						placeholder="선호도 입력해주세요"> <br> <input type="hidden"
 						value="1" class="input" name="memberType"
-						placeholder="멤버타입을 입력해주세요"> <br> <input
-						class="input" name="joinedAt" type="text"
-						placeholder="가입 날짜를 입력해주세요"> <br> <input class="btn1"
+						placeholder="멤버타입을 입력해주세요"> <br> <input type="hidden" id="joinedAt"
+						name="joinedAt"> <br> <input class="btn1"
 						type="submit" value="회원가입">
 				</form>
 
