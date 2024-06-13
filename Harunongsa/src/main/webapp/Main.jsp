@@ -200,6 +200,31 @@ body {
 								alt="<%= allCrop.get(8).getCropidx() %>">
 							<p class="tags">#쑥쑥 #금방</p>
 						</div>
+						</a>
+						
+						<a href="./InfoDetail.jsp?cropname=<%= allCrop.get(9).getCropname() %>&image=<%= allCrop.get(9).getImage() %>&cropidx=<%= allCrop.get(9).getCropidx() %>"
+						style="text-decoration: none; color: black;">
+						<div class="recommended">
+							<h2>
+								친환경 텃밭 가꾸기<br><%= allCrop.get(9).getCropname() %>
+							</h2>
+							<img src="<%= allCrop.get(9).getImage() %>"
+								alt="<%= allCrop.get(9).getCropidx() %>">
+							<p class="tags">#쑥쑥 #금방</p>
+						</div>
+						</a>
+						
+						
+							<a href="./InfoDetail.jsp?cropname=<%= allCrop.get(10).getCropname() %>&image=<%= allCrop.get(10).getImage() %>&cropidx=<%= allCrop.get(10).getCropidx() %>"
+						style="text-decoration: none; color: black;">
+						<div class="recommended">
+							<h2>
+								아이들과 함께 이런 곳은 어때요?<br><%= allCrop.get(10).getCropname() %>
+							</h2>
+							<img src="<%= allCrop.get(10).getImage() %>"
+								alt="<%= allCrop.get(10).getCropidx() %>">
+							<p class="tags">#쑥쑥 #금방</p>
+						</div>
 					</a>
 
 

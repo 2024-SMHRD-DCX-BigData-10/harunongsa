@@ -155,29 +155,54 @@
                 <div class="contentM">
                     <div class="product-grid">
                         <div class="product-card">
-                            <div class="product-image">상품 이미지</div>
+                            <a href="https://www.coupang.com/np/search?component=&q=%ED%99%94%EB%B6%84&channel=user">
+                            <div class="product-image">상품 이미지 화분</div>
                             <button class="price-button">가격</button>
+                            </a>                     
                         </div>
-                        <div class="product-card">
-                            <div class="product-image">상품 이미지</div>
+                        
+                            <div class="product-card">
+                            <a href="https://www.coupang.com/np/search?component=&q=%EC%94%A8%EC%95%97&channel=user">
+                            <div class="product-image">상품 이미지 씨앗</div>
                             <button class="price-button">가격</button>
+                            </a>                     
                         </div>
-                        <div class="product-card">
-                            <div class="product-image">상품 이미지</div>
+                        
+                             <div class="product-card">
+                            <a href="https://www.coupang.com/np/search?component=&q=%EB%AA%A8%EC%A2%85%EC%82%BD&channel=user">
+                            <div class="product-image">상품 이미지 모종삽</div>
                             <button class="price-button">가격</button>
+                            </a>                     
                         </div>
-                        <div class="product-card">
-                            <div class="product-image">상품 이미지</div>
+                        
+                        
+                             <div class="product-card">
+                            <a href="https://www.coupang.com/np/search?component=&q=%EC%98%81%EC%96%91%EC%A0%9C+%EC%8B%9D%EB%AC%BC&channel=user">
+                            <div class="product-image">상품 이미지 영양제</div>
                             <button class="price-button">가격</button>
+                            </a>                     
                         </div>
-                        <div class="product-card">
-                            <div class="product-image">상품 이미지</div>
+                        
+                        
+                             <div class="product-card">
+                            <a href="https://www.coupang.com/np/search?component=&q=%EC%8B%9D%EB%AC%BC+%EB%B9%84%EB%A3%8C&channel=user">
+                            <div class="product-image">상품 이미지 비료</div>
                             <button class="price-button">가격</button>
+                            </a>                     
                         </div>
-                        <div class="product-card">
-                            <div class="product-image">상품 이미지</div>
+                        
+                        
+                             <div class="product-card">
+                            <a href="https://www.coupang.com/np/search?component=&q=%EC%8B%9D%EB%AC%BC+%EB%B6%84%EB%AC%B4%EA%B8%B0&channel=user">
+                            <div class="product-image">상품 이미지 분무기</div>
                             <button class="price-button">가격</button>
+                            </a>                     
                         </div>
+                        
+                        
+                        
+                        
+                        
                     </div>
 
 
