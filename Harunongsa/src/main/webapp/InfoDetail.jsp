@@ -100,6 +100,14 @@ h1 {
     list-style-type: disc;
     font-size: 15Px;
 }
+.heart {
+width: 75px;
+height: 25px;
+text-align: center;
+border-radius:10px;
+color:green;
+
+}
 </style>
 </head>
 
@@ -124,8 +132,18 @@ h1 {
             <div class="content">
                 <h1><%= cropname %></h1>
                 <div class="checkboxes">
-                    <label><input type="checkbox" checked> 마음에 드는 작물 찜하기</label>
-                    <label><input type="checkbox" checked> 키우기 시작하기</label>
+                    <form action="">
+                <input class="heart" name="FAVIDX" type="hidden" >  
+                 <input class="heart" name="MEMBERID" type="hidden"> 
+                  <input class="heart" name="CROPNAME" type="hidden"> 
+                   <input class="heart" name="CREATEDAT" type="hidden"> 
+                   
+                <input class="heart" type="submit" value="찜하기">
+                
+                
+                
+                </form>
+                    <!-- <label><input type="checkbox" checked> 키우기 시작하기</label> -->
                 </div>
                 <div class="management">
                     <p>특징</p>
