@@ -221,7 +221,7 @@ body {
 					onclick="document.getElementById('cropFormRecommended').submit();"
 					style="text-decoration: none; color: black;">
 					<div class="recommended">
-						<h3>이달의 추천 농작물</h3>
+						<h4>이달의 추천 농작물</h3>
 						<br>
 						<h2><%= allCrop.get(8).getCropname() %></h2>
 						<img style="object-fit: cover;"
@@ -262,7 +262,7 @@ body {
 				<div id="EcoInfoContainer">
 					<a href="EcoInfo.html" style="text-decoration: none; color: black;">
 						<div class="recommended">
-							<h3>텃밭부터 준비해볼까요?</h3>
+							<h4>텃밭부터 준비해볼까요?</h3>
 							<br>
 							<h2>친환경 페트병 텃밭 가꾸기</h2>
 							<img style="object-fit: cover;"
@@ -281,7 +281,7 @@ body {
 				<br> <a href="Museum.jsp"
 					style="text-decoration: none; color: black;">
 					<div class="recommended">
-						<h3>아이들과 함께 이런 곳은 어때요?</h3>
+						<h4>아이들과 함께 이런 곳은 어때요?</h3>
 						<br>
 						<h2>농업박물관</h2>
 
@@ -339,7 +339,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let content1 = `
         <a href="EcoInfo.html" style="text-decoration: none; color: black;">
             <div class="recommended">
-                <h3>텃밭부터 준비해볼까요?</h3>
+                <h4>텃밭부터 준비해볼까요?</h3>
                 <br>
                 <h2>친환경 페트병 텃밭 가꾸기</h2>
                 <img style="object-fit:cover;" src="https://images.unsplash.com/photo-1595278069441-2cf29f8005a4?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
@@ -352,7 +352,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let content2 = `
         <a href="ecoInfo2.html" style="text-decoration: none; color: black;">
             <div class="recommended">
-                <h3>여러 농작물을 같이 키워볼까요?</h3>
+                <h4>여러 농작물을 같이 키워볼까요?</h3>
                 <br>
                 <h2>건강한 텃밭가꾸기, 동반식물을 심으세요!</h2>
                 <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
@@ -365,10 +365,10 @@ document.addEventListener("DOMContentLoaded", function() {
     let content3 = `
         <a href="ecoInfo3.html" style="text-decoration: none; color: black;">
             <div class="recommended">
-                <h3>빅테이터 분석을 통한</h3>
+                <h4>빅테이터 분석을 통한</h3>
                 <br>
                 <h2>우리도 어엿한 도시농부! 텃밭가꾸기</h2>
-                <img src="https://plus.unsplash.com/premium_photo-1680322463073-7125c168136a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <img src="https://images.unsplash.com/photo-1615671524827-c1fe3973b648?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <p class="tags">#요즘_트렌드 #하나부터_열까지_다_알려줘요</p>
             </div>
         </a>
