@@ -29,7 +29,7 @@ public class MemDAO {
     // 회원 삭제 메소드
     public int delete(MemDTO dto) {
         SqlSession session = sqlSessionFactory.openSession(true);
-        int row = session.update("delete", dto);
+        int row = session.delete("delete", dto);
         session.close();
         return row;
     }

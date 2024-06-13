@@ -94,26 +94,25 @@
 </head>
 
 <body>
-    
-        <div class="container">
-            <div class="wrapper">
-                <div class="content">
-                    <div class="logout-confirmation">
-                        <p>회원탈퇴 하시겠습니까?</p>
-                        <div class="buttons">
-                        <a href="Login.jsp" style="hidden;text-decoration:none;">
-                            <button class="yes">예</button>
-                          </a>
-                          <a href="MyPage.jsp" style="hidden;text-decoration:none;">
+    <div class="container">
+        <div class="wrapper">
+            <div class="content">
+                <div class="logout-confirmation">
+                    <p>회원탈퇴 하시겠습니까?</p>
+                    <div class="buttons">
+                        <form action="DeleteCon" method="post">
+                            <input type="hidden" name="memberID" value="${sessionScope.memberid}">
+                            <input type="hidden" name="password" value="${sessionScope.password}">
+                            <button type="submit" class="yes">예</button>
+                        <a href="MyPage.jsp" style="hidden;text-decoration:none;">
                             <button class="no">아니오</button>
-                            </a>
-                        </div>
+                        </a>
+                        </form>
                     </div>
                 </div>
             </div>
-
         </div>
-    
+    </div>
 </body>
 
 </html>
