@@ -203,6 +203,13 @@ body {
                     <input type="hidden" name="cropname" value="<%= allCrop.get(8).getCropname() %>">
                     <input type="hidden" name="image" value="<%= allCrop.get(8).getImage() %>">
                     <input type="hidden" name="cropidx" value="<%= allCrop.get(8).getCropidx() %>">
+                    <input type="hidden" name="feature" value="<%= allCrop.get(8).getFeature() %>">
+                    <input type="hidden" name="sowingperiod" value="<%= allCrop.get(8).getSowingperiod() %>">
+                    <input type="hidden" name="sowingmethod" value="<%= allCrop.get(8).getSowingmethod() %>">
+                    <input type="hidden" name="cultivationmethod" value="<%= allCrop.get(8).getCultivationmethod() %>">
+                    <input type="hidden" name="harvestperiod" value="<%= allCrop.get(8).getHarvestperiod() %>">
+                    <input type="hidden" name="dieasepestinfo" value="<%= allCrop.get(8).getDiseasepestinfo() %>">
+                    <input type="hidden" name="recipe" value="<%= allCrop.get(8).getRecipe() %>">
                 </form>
                 <a href="#" onclick="document.getElementById('cropFormEco').submit();" style="text-decoration: none; color: black;">
                     <div class="recommended">
@@ -215,6 +222,13 @@ body {
                     <input type="hidden" name="cropname" value="<%= allCrop.get(9).getCropname() %>">
                     <input type="hidden" name="image" value="<%= allCrop.get(9).getImage() %>">
                     <input type="hidden" name="cropidx" value="<%= allCrop.get(9).getCropidx() %>">
+                    <input type="hidden" name="feature" value="<%= allCrop.get(9).getFeature() %>">
+                    <input type="hidden" name="sowingperiod" value="<%= allCrop.get(9).getSowingperiod() %>">
+                    <input type="hidden" name="sowingmethod" value="<%= allCrop.get(9).getSowingmethod() %>">
+                    <input type="hidden" name="cultivationmethod" value="<%= allCrop.get(9).getCultivationmethod() %>">
+                    <input type="hidden" name="harvestperiod" value="<%= allCrop.get(9).getHarvestperiod() %>">
+                    <input type="hidden" name="dieasepestinfo" value="<%= allCrop.get(9).getDiseasepestinfo() %>">
+                    <input type="hidden" name="recipe" value="<%= allCrop.get(9).getRecipe() %>">
                 </form>
                 <a href="#" onclick="document.getElementById('cropFormKids').submit();" style="text-decoration: none; color: black;">
                     <div class="recommended">
@@ -227,6 +241,13 @@ body {
                     <input type="hidden" name="cropname" value="<%= allCrop.get(10).getCropname() %>">
                     <input type="hidden" name="image" value="<%= allCrop.get(10).getImage() %>">
                     <input type="hidden" name="cropidx" value="<%= allCrop.get(10).getCropidx() %>">
+                    <input type="hidden" name="feature" value="<%= allCrop.get(10).getFeature() %>">
+                    <input type="hidden" name="sowingperiod" value="<%= allCrop.get(10).getSowingperiod() %>">
+                    <input type="hidden" name="sowingmethod" value="<%= allCrop.get(10).getSowingmethod() %>">
+                    <input type="hidden" name="cultivationmethod" value="<%= allCrop.get(10).getCultivationmethod() %>">
+                    <input type="hidden" name="harvestperiod" value="<%= allCrop.get(10).getHarvestperiod() %>">
+                    <input type="hidden" name="dieasepestinfo" value="<%= allCrop.get(10).getDiseasepestinfo() %>">
+                    <input type="hidden" name="recipe" value="<%= allCrop.get(10).getRecipe() %>">
                 </form>
                 <!--  -->
                 <div id='wrapperF'>
