@@ -7,18 +7,15 @@ import org.apache.ibatis.session.SqlSessionFactory;
 
 import com.smhrd.mybatis.SqlSessionManager;
 
-public class FavoriteDAO {
+public class CropFesDAO {
 	SqlSessionFactory sqlSessionFactory = SqlSessionManager.getSqlSession();
 	
-	public int favoriteCrop(FavoriteDTO dto) {
-		
-		int row = 0;
-		SqlSession session = sqlSessionFactory.openSession(true);
-		
-		row = session.insert("favorite", dto);
-		
-		session.close();
-		return row;
-	}
-	
+		public List<CropFesDTO> allCropFes() {
+			List<CropFesDTO> CropFes = null;
+			SqlSession session = sqlSessionFactory.openSession(true);
+			CropFes = session.selectList("allCrop");
+			session.close();
+			
+			return CropFes;
+		}
 }

@@ -13,7 +13,7 @@
 		<typeAlias type="com.smhrd.model.GardenDTO" alias="GardenDTO"/>
 		<typeAlias type="com.smhrd.model.GrowthDTO" alias="GrowthDTO"/>
 		<typeAlias type="com.smhrd.model.CropDTO" alias="CropDTO"/>
-		<typeAlias type="com.smhrd.model.FavoriteDTO" alias="FavoriteDTO"/>
+		<typeAlias type="com.smhrd.model.CropFesDTO" alias="CropFesDTO"/>
 	</typeAliases>
   <environments default="development">
     <environment id="development">
@@ -31,6 +31,6 @@
     <mapper resource="com/smhrd/mapper/Mapper.xml"/>
     <mapper resource="com/smhrd/mapper/BoardMapper.xml"/>
     <mapper resource="com/smhrd/mapper/CropMapper.xml"/>
-    <mapper resource="com/smhrd/mapper/FavoriteMapper.xml"/>
+    <mapper resource="com/smhrd/mapper/FestivalMapper.xml"/>
   </mappers>
 </configuration>
