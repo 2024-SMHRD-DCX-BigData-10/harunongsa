@@ -4,8 +4,16 @@
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
  <mapper namespace = "org.mybatis.example.FestivalMapper">
+ 	<!-- 모든 축제 데이터를 조회하는 쿼리 -->
 	<select id = "allCropFes" resultType="CropFesDTO">
 		select program_name, start_date, end_date, start_time, end_time, location, audience, adult, teen, child, description
 		from cropfestival
 	</select>
+	
+    <!-- 특정 프로그램명을 기반으로 축제 데이터를 조회하는 쿼리 -->	
+	<select id="getCropFesByProgramName" parameterType="String" resultType="com.smhrd.model.CropFesDTO">
+        select program_name, start_date, end_date, start_time, end_time, location, audience, adult, teen, child, description
+        from cropfestival
+        where program_name = #{programName}
+    </select>
 </mapper>
