@@ -123,7 +123,7 @@
                     <tr>
                         <td>
                             <!-- 프로그램명 클릭시 해당 프로그램의 세부 정보를 MuseumInfo.jsp로 이동 -->
-                            <a href="MuseumInfo.jsp?program_name=<%= fes.getProgram_name() %>"><%= fes.getProgram_name() %></a>
+                            <a style="color:black;text-decoration: none;" href="MuseumInfo.jsp?program_name=<%= fes.getProgram_name() %>"><%= fes.getProgram_name() %></a>
                         </td>
                     </tr>
                     <% } %>

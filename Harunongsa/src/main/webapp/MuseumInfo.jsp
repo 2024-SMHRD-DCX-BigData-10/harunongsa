@@ -38,6 +38,7 @@
         .content {
             padding: 25px;
             width: 420px;
+            height:880px;
         }
         h1 {
             margin: 0;
