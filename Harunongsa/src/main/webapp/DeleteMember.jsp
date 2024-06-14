@@ -40,6 +40,7 @@
             padding: 20px;
             width: 100%;
             height: 880px;
+            
 
         }
 

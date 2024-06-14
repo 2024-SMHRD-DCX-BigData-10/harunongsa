@@ -48,17 +48,20 @@ overflow-y: visible;
 		}
 
 		.menu-item {
-			width: 100%;
+			width: 420px;
 			text-align: center;
 			padding: 15px 0;
 			cursor: pointer;
 			font-size: 15px;
 			color: #007bff;
 			border-top: 1px solid #ddd;
+			color:black;
+		
 		}
 
 		.menu-item:hover {
-			background-color: #f1f1f1;
+			background-color: #6b8e23;
+			color:white;
 		}
 
 		.mypage {
@@ -82,6 +85,13 @@ overflow-y: visible;
 			min-height: 100vh;
 			background-size: cover;
 		}
+		
+		.mypage{font-family: 'Noto Serif KR';}
+		.welcome-message{font-family: 'Noto Sans KR';}
+		.menu-item{font-family: 'Noto Sans KR';}
+		
+		
+		
 	</style>
 </head>
 <body>

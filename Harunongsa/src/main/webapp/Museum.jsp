@@ -22,10 +22,10 @@
             background-color: #f0f0f0;
             min-height: 100vh;
             background-size: cover;
-            overflow-y: visible;
+            
         }
         table {
-            width: 100%;
+            width: auto;
             border-collapse: collapse;
             margin-bottom: 20px;
         }
@@ -62,6 +62,7 @@
             max-width: 420px;
             margin: 0 auto;
             padding: 0;
+            height: auto;
         }
         .wrapper {
             align-items: center;
@@ -95,7 +96,7 @@
             padding: 20px;
         }
     </style>
-</head>
+</head> 
 <body>
     <div class="container">
         <div class="header">

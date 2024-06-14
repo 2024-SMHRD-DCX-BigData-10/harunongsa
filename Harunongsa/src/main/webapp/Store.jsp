@@ -139,6 +139,11 @@
         .price-button:hover {
             background-color: #00a047;
         }
+        
+        h1{font-family: 'Noto Serif KR';}
+        button{font-family: 'Noto Sans KR';
+        font-size: 8px;}
+        
     </style>
     </head>
 
@@ -157,21 +162,21 @@
                         <div class="product-card">
                             <a href="https://www.coupang.com/np/search?component=&q=%ED%99%94%EB%B6%84&channel=user">
                             <div class="product-image">상품 이미지 화분</div>
-                            <button class="price-button">가격</button>
+                            <button class="price-button">화분</button>
                             </a>                     
                         </div>
                         
                             <div class="product-card">
                             <a href="https://www.coupang.com/np/search?component=&q=%EC%94%A8%EC%95%97&channel=user">
                             <div class="product-image">상품 이미지 씨앗</div>
-                            <button class="price-button">가격</button>
+                            <button class="price-button">씨앗</button>
                             </a>                     
                         </div>
                         
                              <div class="product-card">
                             <a href="https://www.coupang.com/np/search?component=&q=%EB%AA%A8%EC%A2%85%EC%82%BD&channel=user">
                             <div class="product-image">상품 이미지 모종삽</div>
-                            <button class="price-button">가격</button>
+                            <button class="price-button">모종삽</button>
                             </a>                     
                         </div>
                         
@@ -179,7 +184,7 @@
                              <div class="product-card">
                             <a href="https://www.coupang.com/np/search?component=&q=%EC%98%81%EC%96%91%EC%A0%9C+%EC%8B%9D%EB%AC%BC&channel=user">
                             <div class="product-image">상품 이미지 영양제</div>
-                            <button class="price-button">가격</button>
+                            <button class="price-button">영양제</button>
                             </a>                     
                         </div>
                         
@@ -187,7 +192,7 @@
                              <div class="product-card">
                             <a href="https://www.coupang.com/np/search?component=&q=%EC%8B%9D%EB%AC%BC+%EB%B9%84%EB%A3%8C&channel=user">
                             <div class="product-image">상품 이미지 비료</div>
-                            <button class="price-button">가격</button>
+                            <button class="price-button">비료</button>
                             </a>                     
                         </div>
                         
@@ -195,7 +200,7 @@
                              <div class="product-card">
                             <a href="https://www.coupang.com/np/search?component=&q=%EC%8B%9D%EB%AC%BC+%EB%B6%84%EB%AC%B4%EA%B8%B0&channel=user">
                             <div class="product-image">상품 이미지 분무기</div>
-                            <button class="price-button">가격</button>
+                            <button class="price-button">분무기</button>
                             </a>                     
                         </div>
                         

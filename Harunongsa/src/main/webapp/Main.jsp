@@ -20,7 +20,7 @@
 
 .containerM {
 	width: 100%;
-	max-width: 422px;
+	max-width: 420px;
 	margin: auto;
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -83,7 +83,7 @@
 }
 
 .recommended, .raise-child {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
 .recommended h2, .raise-child h2 {
@@ -100,6 +100,7 @@
 .tags {
 	font-size: 18px;
 	color: #888;
+	font-family: 'Noto Sans KR';
 }
 
 body {
@@ -161,7 +162,24 @@ body {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	background-color: rgb(254, 254, 254);  
+	border-radius: 8px;
+	padding: 5px;
+	
 }
+
+.serif{font-family: 'Noto Serif KR';}
+
+.sans{font-family: 'Noto Sans KR';
+color: rgb(80,80,80);
+}
+hr{margin:0;}
+
+h4{padding:0px;
+margin:0px;}
+
+h2{margin-top: 0px;}
+
 </style>
 </head>
 <body>
@@ -175,13 +193,13 @@ body {
 				<a href="MyPage.jsp" style="text-decoration: none; color: black;">
 					<div class="menu">☰</div>
 				</a>
-				<h1>하루농사</h1>
+				<h1 class="serif">하루농사</h1>
 				<a href="Notify.jsp" style="text-decoration: none;">
 					<div class="icon">🔔</div>
 				</a>
 			</div>
 			<div class="contentM">
-				<h4>베란다에서 무엇을 키울 수 있을까요?</h4>
+				<h4 class="sans">베란다에서 무엇을 키울 수 있을까요?</h4>
 				<div class="InfosM">
 					<div class="crops-container" id="crops-container">
 						<% for(CropDTO c: allCrop){ %>
@@ -221,9 +239,9 @@ body {
 					onclick="document.getElementById('cropFormRecommended').submit();"
 					style="text-decoration: none; color: black;">
 					<div class="recommended">
-						<h4>이달의 추천 농작물</h3>
+						<h4 class="sans">이달의 추천 농작물</h3>
 						<br>
-						<h2><%= allCrop.get(8).getCropname() %></h2>
+						<h2 class="sans"><%= allCrop.get(8).getCropname() %></h2>
 						<img style="object-fit: cover;"
 							src="<%= allCrop.get(8).getImage() %>"
 							alt="<%= allCrop.get(8).getCropidx() %>">
@@ -262,9 +280,9 @@ body {
 				<div id="EcoInfoContainer">
 					<a href="EcoInfo.html" style="text-decoration: none; color: black;">
 						<div class="recommended">
-							<h4>텃밭부터 준비해볼까요?</h3>
+							<h4 class="sans">텃밭부터 준비해볼까요?</h3>
 							<br>
-							<h2>친환경 페트병 텃밭 가꾸기</h2>
+							<h2 class="sans">친환경 페트병 텃밭 가꾸기</h2>
 							<img style="object-fit: cover;"
 								src="https://images.unsplash.com/photo-1595278069441-2cf29f8005a4?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
 							<p class="tags">#천리길도_한걸음 #어렵지 않아요</p>
@@ -281,9 +299,9 @@ body {
 				<br> <a href="Museum.jsp"
 					style="text-decoration: none; color: black;">
 					<div class="recommended">
-						<h4>아이들과 함께 이런 곳은 어때요?</h3>
+						<h4 class="sans">아이들과 함께 이런 곳은 어때요?</h3>
 						<br>
-						<h2>농업박물관</h2>
+						<h2 class="sans">농업박물관</h2>
 
 						<img style="object-fit: cover;"
 							src="https://images.unsplash.com/photo-1539920951450-2b2d59cff66d?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
@@ -352,9 +370,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let content2 = `
         <a href="ecoInfo2.html" style="text-decoration: none; color: black;">
             <div class="recommended">
-                <h4>여러 농작물을 같이 키워볼까요?</h3>
+                <h4 class="sans">여러 농작물을 같이 키워볼까요?</h3>
                 <br>
-                <h2>건강한 텃밭가꾸기, 동반식물을 심으세요!</h2>
+                <h2 class="sans">건강한 텃밭가꾸기, 동반식물을 심으세요!</h2>
                 <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <p class="tags">#도란도란 #일석이조</p>
             </div>
@@ -365,9 +383,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let content3 = `
         <a href="ecoInfo3.html" style="text-decoration: none; color: black;">
             <div class="recommended">
-                <h4>빅테이터 분석을 통한</h3>
+                <h4 class="sans">빅테이터 분석을 통한</h3>
                 <br>
-                <h2>우리도 어엿한 도시농부! 텃밭가꾸기</h2>
+                <h2 class="sans">우리도 어엿한 도시농부! 텃밭가꾸기</h2>
                 <img src="https://images.unsplash.com/photo-1615671524827-c1fe3973b648?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <p class="tags">#요즘_트렌드 #하나부터_열까지_다_알려줘요</p>
             </div>

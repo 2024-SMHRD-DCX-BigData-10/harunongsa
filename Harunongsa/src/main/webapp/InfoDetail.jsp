@@ -62,9 +62,10 @@ h1 {
 }
 
 .management {
-    background-color: #f0fff0;
+    background-color: rgb(253,253,253);
     padding: 10px;
     border-radius: 5px;
+    margin:5px;
 }
 
 .management p {
@@ -108,6 +109,10 @@ border-radius:10px;
 color:green;
 
 }
+h1{font-family: 'Noto Serif KR';}
+p{font-family: 'Noto Sans KR';}
+span{font-family: 'Noto Sans KR';}
+
 </style>
 </head>
 
@@ -147,31 +152,31 @@ color:green;
                 </div>
                 <div class="management">
                     <p>특징</p>
-                    <p><%=feature %></p>
+                    <span><%=feature %></span>
                 </div>
                 <div class="management">
                     <p>파종시기</p>
-                    <p><%=sowingperiod %></p>
+                    <span><%=sowingperiod %></span>
                 </div>
                 <div class="management">
                     <p>파종법</p>
-                    <p><%=sowingmethod %></p>
+                    <span><%=sowingmethod %></span>
                 </div>
                 <div class="management">
                     <p>재배법</p>
-                    <p><%=cultivationmethod %></p>
+                    <span><%=cultivationmethod %></span>
                 </div>
                 <div class="management">
                     <p>수확시간</p>
-                    <p><%=harvestperiod %></p>
+                    <span><%=harvestperiod %></span>
                 </div>
                 <div class="warning">
                     <p>병해충정보</p>
-                    <p><%=diseasepestinfo %></p>
+                    <span><%=diseasepestinfo %></span>
                 </div>
                 <div class="management">
                     <p>요리법</p>
-                    <p><%=recipe %></p>
+                    <span><%=recipe %></span>
                 </div>
             </div>
         </div>

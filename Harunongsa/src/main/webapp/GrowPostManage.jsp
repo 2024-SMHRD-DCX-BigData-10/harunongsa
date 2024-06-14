@@ -160,6 +160,11 @@
         .delete-btn:hover {
             background-color: #c82333;
         }
+        
+        
+h1 {font-family: 'Noto Serif KR';
+	
+}
     </style>
   
 </head>

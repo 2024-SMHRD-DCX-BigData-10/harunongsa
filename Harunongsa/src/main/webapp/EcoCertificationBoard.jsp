@@ -36,6 +36,7 @@
         }
 
         table {
+            
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
@@ -57,17 +58,19 @@
         }
 
         .create-button {
-            background-color: #BEDC52;
-            color: black;
-            border: none;
-
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 15px;
-            margin-bottom: 20px;
-            transition: background-color 0.3s ease;
-        }
-
+    background-color: #BEDC52;
+    color: black;
+    border: none;
+    font-family: 'Noto Sans KR';
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto; /* 가운데 정렬을 위한 margin 설정 */
+    
+}
         .create-button:hover {
             background-color: #6aae66;
         }
@@ -106,6 +109,7 @@
             padding: 10px 20px;
             background-color: #fff;
             border-bottom: 1px solid #e0e0e0;
+            font-family: 'Noto Serif KR';
         }
 
         .header h1 {
@@ -123,7 +127,9 @@
         }
 
         .content {
+            font-family: 'Noto Sans KR';
             padding: 20px;
+            
 
         }
     </style>

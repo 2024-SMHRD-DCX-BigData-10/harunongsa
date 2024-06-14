@@ -137,6 +137,29 @@
 
             resize: none;
         }
+        
+        button{		padding: 8.5px 20px;
+				font-size: 15px;
+				background-color: #BEDC52;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: background-color 0.3s ease;
+				text-decoration: none;}
+				.button-container {
+    text-align: center; /* 가운데 정렬을 위한 스타일 */
+}
+
+.button-container a,
+.button-container button {
+    margin: 0 20px; /* 버튼 사이의 간격을 조절 */
+}
+
+h1 {font-family: 'Noto Serif KR';
+	
+}
+
     </style>
 </head>
 

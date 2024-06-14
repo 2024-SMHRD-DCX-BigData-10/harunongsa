@@ -81,7 +81,7 @@
         .btn1 {
             margin-top: 25px;
             background-color: #BEDC52;
-            border-radius: 25px;
+            border-radius: 7px;
             border: 0px solid #ffffff;
             color: #fff;
             height: 30px;
@@ -91,13 +91,18 @@
         .btn {
             margin-top: 7px;
             background-color: #BEDC52;
-            border-radius: 25px;
+            border-radius: 8px;
             border: 0px solid #ffffff;
             color: #fff;
             height: 30px;
             width: 200px;
 
+
         }
+        
+        h1{font-family: 'Noto Serif KR';}
+        input{font-family: 'Noto Sans KR';}
+        
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {

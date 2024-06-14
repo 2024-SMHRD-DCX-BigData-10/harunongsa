@@ -112,6 +112,14 @@
         .card-content p strong {
             color: #333;
         }
+        
+        img{border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;}
+        
+        
+h1 {font-family: 'Noto Serif KR';
+	
+}
     </style>
     </head>
 

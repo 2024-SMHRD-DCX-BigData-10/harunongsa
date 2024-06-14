@@ -91,6 +91,7 @@
             width: 183px;
             margin-bottom: 3px;
             font-size: 13px;
+            font-family: 'Noto Sans KR';
         }
 
         .btn {
@@ -103,16 +104,20 @@
             width: 183px;
             margin-bottom: 7px;
             font-size: 13px;
+            font-family: 'Noto Sans KR';
 
         }
 
         h1 {
             font-size: 30px;
+            font-family: 'Noto Serif KR';
         }
 
         .input {
             font-size: 13px;
+            font-family: 'Noto Sans KR';
         }
+        
     </style>
 </head>
 <body>
@@ -120,7 +125,7 @@
         <div class="container">
             <div class="wrapper">
                 <div class="content">
-                    <h1 class="Login">Login</h1>
+                    <h1 class="Login">로그인</h1>
                     <form action="LoginProgram" method="post">
                         <input class="input" name="memberID" type="text" placeholder="아이디를 입력해주세요">
                         <br>
