@@ -101,6 +101,7 @@
             font-size: 12px;
             margin-bottom: 20px;
             transition: background-color 0.3s ease;
+              border-radius: 8px;
         }
 
         .create-button:hover {

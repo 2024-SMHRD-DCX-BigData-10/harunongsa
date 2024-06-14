@@ -102,16 +102,19 @@ h1 {
     font-size: 15Px;
 }
 .heart {
-width: 75px;
-height: 25px;
+width: 60px;
+height: 30px;
 text-align: center;
 border-radius:10px;
-color:green;
+border:0px;
+color:black;
 
 }
 h1{font-family: 'Noto Serif KR';}
 p{font-family: 'Noto Sans KR';}
-span{font-family: 'Noto Sans KR';}
+span, .heart {font-family: 'Noto Sans KR';}
+
+
 
 </style>
 </head>
@@ -136,20 +139,21 @@ span{font-family: 'Noto Sans KR';}
             <img src="<%= image %>" alt="<%= cropidx %>" class="crops-image">
             <div class="content">
                 <h1><%= cropname %></h1>
-                <div class="checkboxes">
-                    <form action="">
+                
+                    <form action="#" style="display:inline-block;">
                 <input class="heart" name="FAVIDX" type="hidden" >  
                  <input class="heart" name="MEMBERID" type="hidden"> 
                   <input class="heart" name="CROPNAME" type="hidden"> 
                    <input class="heart" name="CREATEDAT" type="hidden"> 
-                   
-                <input class="heart" type="submit" value="찜하기">
-                
-                
-                
+                  
+                <input class="heart" type="hidden" value="찜하기">
+         
                 </form>
+                
+                   
+    <div class="heart-container"></div>
                     <!-- <label><input type="checkbox" checked> 키우기 시작하기</label> -->
-                </div>
+               
                 <div class="management">
                     <p>특징</p>
                     <span><%=feature %></span>

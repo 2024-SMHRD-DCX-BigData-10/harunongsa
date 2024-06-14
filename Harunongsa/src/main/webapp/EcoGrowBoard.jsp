@@ -68,6 +68,7 @@
     transition: background-color 0.3s ease;
     display: block;
     margin: 0 auto; /* 가운데 정렬을 위한 margin 설정 */
+    border-radius: 8px;
     
 }
         .create-button:hover {
