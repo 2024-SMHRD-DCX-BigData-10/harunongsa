@@ -321,8 +321,8 @@ h2{margin-top: 0px;}
 							<div class="icon">📰</div>
 						</a> <a href="EcoActivityMain.jsp" style="text-decoration: none;">
 							<div class="icon">🌱</div>
-						</a> <a href="Store.jsp" style="text-decoration: none;">
-							<div class="icon">💼</div>
+						</a> <a href="calendar.html" style="text-decoration: none;">
+							<div class="icon">📅</div>
 						</a>
 					</div>
 				</div>

@@ -165,7 +165,7 @@
                         <!-- 추가 데이터는 여기에 -->
                          <% for(GardenDTO g: Certigarden){ %>
                     	   <tr>
-                    	   		<td><%= g.getCertidx() %></td>
+                    	   		<td><%= g.getCertidx()-1 %></td>
                     	   		<td><%= g.getTitle() %></td>
                     	   		<td><%= g.getMemberid() %></td>
                     	   		<td><%= g.getCreatedat() %></td>

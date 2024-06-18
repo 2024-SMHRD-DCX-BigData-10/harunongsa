@@ -133,6 +133,7 @@ span, .heart {font-family: 'Noto Sans KR';}
         String harvestperiod = request.getParameter("harvestperiod");
         String diseasepestinfo = request.getParameter("diseasepestinfo");
         String recipe = request.getParameter("recipe");
+        String memberId = request.getParameter("memberId");
     %>
     <div id="root">
         <div class="card">
@@ -140,20 +141,16 @@ span, .heart {font-family: 'Noto Sans KR';}
             <div class="content">
                 <h1><%= cropname %></h1>
                 
-                    <form action="#" style="display:inline-block;">
-                <input class="heart" name="FAVIDX" type="hidden" >  
-                 <input class="heart" name="MEMBERID" type="hidden"> 
-                  <input class="heart" name="CROPNAME" type="hidden"> 
-                   <input class="heart" name="CREATEDAT" type="hidden"> 
-                  
-                <input class="heart" type="hidden" value="찜하기">
-         
-                </form>
-                
-                   
-    <div class="heart-container"></div>
-                    <!-- <label><input type="checkbox" checked> 키우기 시작하기</label> -->
                
+                    <form action="favoriteCon" method="post" style="display:inline-block;">
+                  <input type="hidden" name="favidx" value="<%= cropname %>">  
+                <input type="hidden" name="cropname" value="<%= cropname %>">
+                <input type="hidden" name="memberid" value="<%=memberId %>"><!-- 실제 member ID로 대체 필요 -->
+                <button type="submit" class="heart">찜하기</button>
+            </form>
+               
+                   
+  
                 <div class="management">
                     <p>특징</p>
                     <span><%=feature %></span>

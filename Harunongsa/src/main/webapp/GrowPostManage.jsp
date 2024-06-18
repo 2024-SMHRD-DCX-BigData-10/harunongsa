@@ -197,19 +197,20 @@ h1 {font-family: 'Noto Serif KR';
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- 예시 데이터 -->
-                        <tr>
-                           <td>1</td>
-                    <td>작물 A</td>
-                    <td>2023</td>
-                    <td><button class="edit-btn">수정</button></td>
-                    <td><button class="delete-btn">삭제</button></td>
-                        </tr>
+                        
                         <!-- 추가 데이터는 여기에 -->
                         <% for(DiaryDTO d: Diaries){ %>
                         	<tr>
-                        		<td> <%= d.getDiaryidx() %></td>
-                        		<td> <%= d.getDiarytitle() %></td>
+                        		<td> <%= d.getDiaryidx() -1 %></td>
+                        		
+
+<td> 
+<a href="postViewer.jsp">
+<%= d.getDiarytitle() %>
+</a>
+</td>
+<!-- 240616김유빈수정 -->
+
                         		<td> <%= d.getCreatedat() %></td>
                         		<td><button class="edit-btn">수정</button></td>
                     			<td><button class="delete-btn">삭제</button></td>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캘린더</title>
+    
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image:
+				url(https://images.unsplash.com/photo-1617957743162-76ab3199a672?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+			min-height: 100vh;
+			/* 변경됨 */
+			background-size: cover;
+			overflow-y: visible;
+}
+
+.calendar-container {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(253,253,253);
+    height:700px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 420px;
+    padding-left: 5px;
+    padding-right: 25px;
+}
+
+.menu-icon, .search-icon, .notification-icon {
+    font-size: 20px;
+}
+.dateH {font-size: 20px;}
+
+.month {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.calendar {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.week {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.day, .date {
+    flex: 1;
+    text-align: center;
+}
+
+.date {
+    padding: 15px 0;
+}
+
+.date span {
+    display: block;
+    font-size: 18px;
+}
+
+.date small {
+    display: block;
+    font-size: 10px;
+    color: gray;
+}
+
+.past {
+    color: #ccc;
+}
+
+.selected {
+    border: 1px solid #00a047;
+    border-radius: 10px;
+    position: relative;
+}
+
+.smiley {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+
+.add-schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-icon {
+    background: rgb(0,128,0);
+    color: #fff;
+    border-radius: 25%;
+    padding: 5px 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Sunday {color: red;}
+.SundayP {color: red; opacity: 40%;}
+.event{font-size: 8px;
+font-weight: bold;
+background-color: yellow;
+border-radius: 7px;
+font-family: 'Noto Sans KR';
+}
+    </style>
+
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="header">
+            <!-- <div class="menu-icon">☰</div> -->
+            <div class="month">6월</div>
+            
+            <div class="dateH">17일</div>
+
+            <div class="search-icon">🔍</div>
+        </div>
+        <div class="calendar">
+            <div class="week">
+                <div class="day">일</div>
+                <div class="day">월</div>
+                <div class="day">화</div>
+                <div class="day">수</div>
+                <div class="day">목</div>
+                <div class="day">금</div>
+                <div class="day">토</div>
+            </div>
+            <div class="dates">
+                <!-- Sample Week -->
+                <div class="week">
+                    <div class="date past" >
+                        <span class="SundayP">26</span>
+                        <small>4.19</small>
+                    </div>
+                    <div class="date past">
+                        <span>27</span>
+                        <small></small>
+                    </div>
+                    <div class="date past">
+                        <span>28</span>
+                        <small></small>
+                    </div>
+                    <div class="date past">
+                        <span>29</span>
+                        <small></small>
+                    </div>
+                    <div class="date past">
+                        <span>30</span>
+                        <small></small>
+                    </div>
+                    <div class="date past">
+                        <span>31</span>
+                        <small></small>
+                    </div>
+                    <div class="date">
+                        <span>1</span>
+                    </div>
+                </div>
+                <!-- Additional weeks would follow the same structure -->
+                <div class="week">
+                    <div class="date" class="Sunday">
+                        <span class="Sunday">2</span>
+                        <small>4.26</small>
+                    </div>
+                    <div class="date">
+                        <span>3</span>
+                    </div>
+                    <div class="date">
+                        <span>4</span>
+                    </div>
+                    <div class="date">
+                        <span>5</span>
+                    </div>
+                    <div class="date">
+                        <span>6</span>
+                    </div>
+                    <div class="date">
+                        <span>7</span>
+                    </div>
+                    <div class="date">
+                        <span>8</span>
+                    </div>
+                </div>
+                <div class="week">
+                    <div class="date" class="Sunday">
+                        <span class="Sunday">9</span>
+                        <small>5.4</small>
+                    </div>
+                    <div class="date">
+                        <span>10</span>
+                    </div>
+                    <div class="date">
+                        <span>11</span>
+                    </div>
+                    <div class="date">
+                        <span>12</span>
+                    </div>
+                    <div class="date">
+                        <span>13</span>
+                    </div>
+                    <div class="date">
+                        <span>14</span>
+                    </div>
+                    <div class="date">
+                        <span>15</span>
+                    </div>
+                </div>
+                <div class="week">
+                    <div class="date" class="Sunday">
+                        <span class="Sunday">16</span>
+                        <small>5.11</small>
+                    </div>
+                    <div class="date">
+                        <span>17</span>
+                        <div class="event">파슬리물주기</div>
+                    </div>
+                    <div class="date">
+                        <span>18</span>
+                    </div>
+                    <div class="date">
+                        <span>19</span>
+                    </div>
+                    <div class="date">
+                        <span>20</span>
+                    </div>
+                    <div class="date">
+                        <span>21</span>
+                    </div>
+                    <div class="date">
+                        <span>22</span>
+                    </div>
+                </div>
+                <div class="week">
+                    <div class="date" class="Sunday">
+                        <span class="Sunday">23</span>
+                        <small>5.18</small>
+                    </div>
+                    <div class="date">
+                        <span>24</span>
+                    </div>
+                    <div class="date">
+                        <span>25</span>
+                    </div>
+                    <div class="date">
+                        <span>26</span>
+                    </div>
+                    <div class="date">
+                        <span>27</span>
+                    </div>
+                    <div class="date">
+                        <span>28</span>
+                    </div>
+                    <div class="date">
+                        <span>29</span>
+                    </div>
+                </div>
+                <div class="week">
+                    <div class="date" class="Sunday">
+                        <span class="Sunday">30</span>
+                        <small>5.25</small>
+                    </div>
+                    <div class="date past" class="date">
+                        <span>1</span>
+                    </div>
+                    <div class="date past" class="date">
+                        <span>2</span>
+                    </div>
+                    <div class="date past" class="date">
+                        <span>3</span>
+                    </div>
+                    <div class="date past" class="date">
+                        <span>4</span>
+                    </div>
+                    <div class="date past" class="date">
+                        <span>5</span>
+                    </div>
+                    <div class="date past" class="date">
+                        <span>6</span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="add-schedule">
+            <span>6월 17일에 일정 추가</span>
+            <div class="add-icon">+</div>
+        </div>
+    </div>
+</body>
+</html>

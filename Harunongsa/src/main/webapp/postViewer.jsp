@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import = "java.util.List" %>
+    <%@ page import = "com.smhrd.model.DiaryDTO" %>
+<%@ page import = "com.smhrd.model.DiaryDAO" %>
+<%@ page import = "java.util.ArrayList" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -86,31 +90,40 @@
 
 <body>
 
+
+<!-- 240616김유빈 수정 -->
+
+
     <div class="card">
         <!-- <img src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Tomatoes" class="crops-image"> -->
         <div class="content">
-            <h1>글제목</h1>
+            <h1>test</h1>
+            
 
             
             <div class="need">
                 
                 <p>사진</p>
+                <div style="background-image: url("C:\Users\smhrd1\Downloads\mostafa-agami-ROLioAWYkhM-unsplash.jpg)"></div>
                 
             </div>
             <div class="need">
                
                 <p>작물 이름</p>
+                <p>test</p>
                 
             </div>
             <div class="need">
                
                 <p>내용</p>
+                <p>test</p>
                 
             </div>
             <div class="need">
              
                 <p>작성일시</p>
+                <p>2024/06/15 18:26:17</p>
             </div>
 
 
